@@ -74,7 +74,7 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./dist
       with:
-        secretId: ${{ secrets.SECRET_ID }}
-        secretKey: ${{ secrets.SECRET_KEY }}
-        envId: ${{ secrets.ENV_ID }}
+        secretId: ${{ secrets.SECRETID }}
+        secretKey: ${{ secrets.SECRETKEY }}
+        envId: ${{ secrets.ENVID }}
         staticSrcPath: dist
