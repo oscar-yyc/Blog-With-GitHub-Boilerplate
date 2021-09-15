@@ -66,9 +66,13 @@ jobs:
       with:
         emptyCommits: false
         
-    - name: Deploy static to Tencent CloudBase
+    - name: Tencent CloudBase Github Action
       id: deployStatic
       uses: TencentCloudBase/cloudbase-action@v1.1.0
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./dist
       with:
         secretId: ${{ secrets.SECRET_ID }}
         secretKey: ${{ secrets.SECRET_KEY }}
