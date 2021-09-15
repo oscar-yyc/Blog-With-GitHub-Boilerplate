@@ -9,10 +9,12 @@ build_dir = "../dist/"
 index_page_size = 10
 archives_page_size = 20
 template = {
-    "name": "Galileo",
-    "type": "local",
-    "path": "../Galileo"
+    "name": "Kepler",
+    "type": "git",
+    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
+    "branch": "latest"
 }
+
 enable_jsdelivr = {
     "enabled": False,
     "repo": ""
@@ -26,7 +28,7 @@ author = "向日葵旺"
 email = "iloveyichen@aliyun.com"
 author_homepage = "https://www.imalan.cn"
 description = "Coding Changes the World"
-key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
+key_words = ['Maverick', '昳兮wiki', 'Kepler', 'blog']
 language = 'zh-CN'
 external_links = [
     {
