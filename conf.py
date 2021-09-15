@@ -19,11 +19,11 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "小旺旺的日常"
+site_name = "昳兮wiki"
 site_logo = "${static_prefix}logo.png"
 site_build_date = "2019-12-18T16:51+08:00"
-author = "小旺旺"
-email = "w2399386962@163.com"
+author = "向日葵旺"
+email = "iloveyichen@aliyun.com"
 author_homepage = "https://www.imalan.cn"
 description = "Coding Changes the World"
 key_words = ['Maverick', '熊猫小A', 'Galileo', 'blog']
