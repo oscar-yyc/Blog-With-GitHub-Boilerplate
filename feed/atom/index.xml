@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/wiki/</id><title>昳兮wiki</title><updated>2021-09-15T02:54:21.380810+08:06</updated><author><name>向日葵旺</name><email>iloveyichen@aliyun.com</email></author><link href="/wiki/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/wiki/android-chrome-512x512.png</logo><subtitle>Coding Changes the World</subtitle><entry><id>/wiki/archives/typography/</id><title>Hello World!</title><updated>2021-09-15T02:54:21.380863+00:00</updated><author><name>AlanDecode</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/wiki/</id><title>昳兮wiki</title><updated>2021-09-15T03:15:17.741355+08:06</updated><author><name>向日葵旺</name><email>iloveyichen@aliyun.com</email></author><link href="/wiki/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/wiki/android-chrome-512x512.png</logo><subtitle>Coding Changes the World</subtitle><entry><id>/wiki/archives/typography/</id><title>Hello World!</title><updated>2021-09-15T03:15:17.741549+00:00</updated><author><name>AlanDecode</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -78,4 +78,849 @@
 &lt;/table&gt;
 &lt;h2&gt;Link Card&lt;/h2&gt;
 &lt;div class="links"&gt;
-&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/wiki/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry></feed>
+&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</content><link href="/wiki/archives/typography/" rel="alternate"/><published>2019-12-18T16:50:00+08:06</published></entry><entry><id>/wiki/archives/mysql_notes/</id><title>MySQL学习笔记</title><updated>2021-09-15T03:15:17.741523+00:00</updated><author><name>dachunwang</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;h2&gt;数据库基础知识&lt;/h2&gt;
+&lt;h3&gt;数据库概述&lt;/h3&gt;
+&lt;p&gt;数据库：（Database，DB）是按照数据结构来组织、存储和管理数据的仓库，其本身可看作电子化的文件柜，用户可以对文件中的数据进行增加、删除、修改、查找等操作。&lt;/p&gt;
+&lt;p&gt;数据库系统：由数据库、数据库管理系统、数据库应用程序等组成。&lt;/p&gt;
+&lt;h3&gt;数据库存储结构&lt;/h3&gt;
+&lt;p&gt;数据库是存储和管理数据的仓库，但数据库并不能直接存储数据，数据是存储在表中的，在存储数据的过程中一定会用到数据库服务器，所谓的数据库服务器就是指在计算机上安装一个数据库管理程序。&lt;/p&gt;
+&lt;h3&gt;SQL语言&lt;/h3&gt;
+&lt;p&gt;SQL（Structured Query Language即结构化查询语言）语言是一种数据库查询语言和程序设计语言。&lt;/p&gt;
+&lt;p&gt;它是一种关系型数据库语言，主要用于管理数据库中的数据，如存取数据、查询数据、更新数据等。&lt;/p&gt;
+&lt;p&gt;关系型数据库语言由4部分组成，具体如下：&lt;/p&gt;
+&lt;p&gt;（1）数据定义语言（DDL） 用于数据库的创建以及修改&lt;/p&gt;
+&lt;p&gt;（2）数据操作语言（DML） 用于执行插入、删除操作&lt;/p&gt;
+&lt;p&gt;（3）数据查询语言（DQL） 用于执行查询操作&lt;/p&gt;
+&lt;p&gt;（4）数据控制语言（DCL） 用于执行权限操作&lt;/p&gt;
+&lt;h3&gt;常见的数据库产品&lt;/h3&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="500" data-height="304" src="https://s2.ax1x.com/2020/02/14/1jlO61.jpg" alt="1jlO61.jpg" /&gt;&lt;figcaption&gt;1jlO61.jpg&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ORACLE数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Oracle数据库管理系统是由甲骨文（Oracle）公司开发的，在数据库领域一直处于领先地位。目前，Oracle 数据库覆盖了大、中、小型机等几十种机型，成为世界上使用最广泛的关系型数据管理系统（由二维表及其之间的关系组成的一个数据库）之一。&lt;/p&gt;
+&lt;p&gt;Oracle数据库管理系统采用标准的SQL 语言，并经过美国国家标准技术所(NIST)测试。与IBM SQL/DS、DB2、INGRES、IDMS/R等兼容，而且它可以在VWS、DOS、UNIX、Windows等操作系统下工作。不仅如此，Oracle 数据库管理系统还具有良好的兼容性、可移植性和可连接性。
+&lt;figure&gt;&lt;img data-width="548" data-height="254" src="https://s2.ax1x.com/2020/02/14/1j1039.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;SQL server数据库&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SQL Server是由微软公司开发的一种关系型数据库管理系统，它已广泛用于电子商务、银行、保险、电力等行业。&lt;/p&gt;
+&lt;p&gt;SQL Server 提供了对XML和Internet标准的支持，具有强大的、灵活的、基于Web的应用程序管理功能。而且界面友好、易于操作，深受广大用户的喜爱，但它只能在Windows平台上运行，并对操作系统的稳定性要求较高，因此很难处理日益增长的用户数量。
+&lt;figure&gt;&lt;img data-width="235" data-height="142" src="https://s2.ax1x.com/2020/02/14/1j3V29.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;DB2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;DB2数据库是由IBM公司研制的一种关系型数据库管理系统，主要应用于OS/2、Windows等平台下，具有较好的可伸缩性，可支持从大型机到单用户环境。&lt;/p&gt;
+&lt;p&gt;DB2支持标准的SQL语言，并且提供了高层次的数据利用性、完整性、安全性和可恢复性，以及小规模到大规模应用程序的执行能力，适合于海量数据的存储，但相对于其它的数据库管理系统而言，DB2的操作比较复杂。
+&lt;figure&gt;&lt;img data-width="600" data-height="209" src="https://s2.ax1x.com/2020/02/14/1j3cMn.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MongoDB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MongoDB是由10gen公司开发的一个介于关系数据库和非关系数据库之间的产品，是非关系数据库当中功能最丰富，最像关系数据库的。他支持的数据结构非常松散，是类似JSON的bjson格式，因此可以存储比较复杂的数据类型。&lt;/p&gt;
+&lt;p&gt;Mongo数据库管理系统最大的特点是它支持的查询语言非常强大，其语法有点类似于面向对象的查询语言，可以实现类似关系数据库单表查询的绝大部分功能，而且还支持对数据建立索引。不仅如此，它还是一个开源数据库，并且具有高性能、易部署、易使用，存储数据非常方便等特点。对于大数据量、高并发、弱事务的互联网应用，MongoDB完全可以满足Web2.0和移动互联网的数据存储需求。
+&lt;figure&gt;&lt;img data-width="280" data-height="210" src="https://s2.ax1x.com/2020/02/14/1jGBcj.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;MySQL 数据库管理系统是由瑞典的MySQL AB公司开发的，但是几经辗转，现在是Oracle产品。它是以“客户端/服务器”模式实现的，是一个多用户、多线程的小型数据库服务器。而且MySQL是开源数据的，任何人都可以获得该数据库的源代码并修正MySQL的缺陷。&lt;/p&gt;
+&lt;p&gt;MySQL具有跨平台的特性，它不仅可以在Windows平台上使用，还可以在UNIX、Linux、和Mac OS等平台上使用。相对其他数据库而言，MySQL的使用更加方便、快捷而且MySQL是免费的运营成本低，因此，越来越多的公司都在使用MySQL。&lt;/p&gt;
+&lt;h2&gt;启动MySQL服务&lt;/h2&gt;
+&lt;h3&gt;1.通过Windows服务管理器启动MySQL服务&lt;/h3&gt;
+&lt;p&gt;打开【运行】命令&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="777" data-height="680" src="https://s2.ax1x.com/2020/02/14/1jCgD1.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;输入命名“services.msc”&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="399" data-height="230" src="https://s2.ax1x.com/2020/02/14/1jCsgJ.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;找到MySQL服务右击启动&lt;/p&gt;
+&lt;p&gt;&lt;a href="https://imgchr.com/i/1jCyv9"&gt;&lt;figure&gt;&lt;img data-width="806" data-height="593" src="https://s2.ax1x.com/2020/02/14/1jCyv9.png" alt="" /&gt;&lt;/figure&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;2.使用DOS命令启动&lt;/h3&gt;
+&lt;p&gt;以管理员身份运行cmd&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="785" data-height="681" src="https://s2.ax1x.com/2020/02/14/1jFMAx.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;输入以下命令启动MySQL服务&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;net start mysql&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="979" data-height="512" src="https://s2.ax1x.com/2020/02/14/1jFl4K.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;输入以下命令停止MySQL服务&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;net stop mysql&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="979" data-height="512" src="https://s2.ax1x.com/2020/02/14/1jFQN6.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;使用DOS命令登陆MySQL服务数据库&lt;/h2&gt;
+&lt;p&gt;以管理员身份运行cmd&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="785" data-height="681" src="https://s2.ax1x.com/2020/02/14/1jFMAx.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;在登陆数据库之前，要先启动MySQL服务&lt;/p&gt;
+&lt;p&gt;输入以下命令登陆MySQL数据库&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;mysql -h hostname -u username -p&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;hostname为服务器主机地址&lt;/p&gt;
+&lt;p&gt;username为用户名&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="979" data-height="512" src="https://s2.ax1x.com/2020/02/14/1jQMVS.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;再输入密码即可登陆&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="979" data-height="512" src="https://s2.ax1x.com/2020/02/14/1jQub8.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;数据库的基本操作&lt;/h2&gt;
+&lt;h3&gt;创建数据库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE DATABASE  数据库名称;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;查看所有已存在数据库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SHOW DATABASES;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;查看已创建好的数据库信息&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SHOW CREATE DATABASE 数据库名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;修改数据库编码&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER DATABASE 数据库名 default CHARACTER SET 编码方式 COLLATE 编码方式_bin;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;两个编码方式均为修改后的编码方式&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;使用数据库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;USE 数据库名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;查看当前使用的数据库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT DATABASE();&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;删除数据库&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;DROP DATABASE 数据库名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;数据类型&lt;/h2&gt;
+&lt;h3&gt;整数类型&lt;/h3&gt;
+&lt;p&gt;MySQL中的整数类型可分为5种，分别是TINYINT、SMALLINT、MEDIUMINT、INT和BIGINT&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="http://image-xiaowangwang.test.upcdn.net/%E7%BD%91%E7%AB%99%E7%94%A8%E5%9B%BE/MySQL%E6%95%B4%E6%95%B0%E7%B1%BB%E5%9E%8B.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;浮点数类型和定点数类型&lt;/h3&gt;
+&lt;p&gt;在MySQL数据库中，存储的小数都是使用浮点数和定点数来表示的。&lt;/p&gt;
+&lt;p&gt;浮点数的类型有两种，分别是单精度浮点数类型（FLOAT）和双精度浮点类型（DOUBLE）。而定点数类型只有DECIMAL类型。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="http://image-xiaowangwang.test.upcdn.net/%E7%BD%91%E7%AB%99%E7%94%A8%E5%9B%BE/MySQL%E6%B5%AE%E7%82%B9%E6%95%B0%E5%92%8C%E5%AE%9A%E7%82%B9%E6%95%B0%E7%B1%BB%E5%9E%8B.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;DECIMAL(M, D)&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;M&lt;/strong&gt;表示该小数最多需要的十进制有效数字个数&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;注意是&lt;strong&gt;有效数字&lt;/strong&gt;个数，比方说对于小数&lt;strong&gt;-2.3&lt;/strong&gt;来说有效数字个数就是2，对于小数&lt;strong&gt;0.9&lt;/strong&gt;来说有效数字个数就是&lt;strong&gt;1&lt;/strong&gt;。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;D&lt;/strong&gt;表示该小数的小数点后的十进制数字个数。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;小数点后有几个十进制数字，&lt;strong&gt;D&lt;/strong&gt;的值就是什么。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th style="text-align:center"&gt;类 型&lt;/th&gt;
+&lt;th style="text-align:center"&gt;取值范围&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DECIMAL(3, 0)&lt;/td&gt;
+&lt;td style="text-align:center"&gt;-99 ~ 99&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DECIMAL(3, 1)&lt;/td&gt;
+&lt;td style="text-align:center"&gt;-99.9 ~ 99.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DECIMAL(3, 2)&lt;/td&gt;
+&lt;td style="text-align:center"&gt;-9.9 ~ 9.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DECIMAL(4, 1)&lt;/td&gt;
+&lt;td style="text-align:center"&gt;-999.9 ~ 999.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DECIMAL(5, 1)&lt;/td&gt;
+&lt;td style="text-align:center"&gt;-9999.9 ~ 9999.9&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;a href="https://blog.51cto.com/14226230/2420577"&gt;定点数类型详解&lt;/a&gt;&lt;/p&gt;
+&lt;h3&gt;日期与时间类型&lt;/h3&gt;
+&lt;p&gt;为了方便在数据库中存储日期和时间，MySQL提供了表示日期和时间的数据类型，分别是YEAR、DATE、TIME、DATETIME和TIMESTAMP&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="http://image-xiaowangwang.test.upcdn.net/%E7%BD%91%E7%AB%99%E7%94%A8%E5%9B%BE/MySQL%E6%97%A5%E6%9C%9F%E5%92%8C%E6%97%B6%E9%97%B4%E7%B1%BB%E5%9E%8B.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;YEAR&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​        &lt;strong&gt;YEAR&lt;/strong&gt;类型用于表示年份，在MySQL中，可以使用以下三种格式指定YEAR类型的值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;使用4位字符串或数字表示，范围为‘1901’ ~ ‘2155’或1901 ~ 2155&lt;/li&gt;
+&lt;li&gt;使用2位字符串表示，范围为‘00’~‘99’&lt;/li&gt;
+&lt;li&gt;使用2位数字表示，范围为1~99&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DATE&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​        &lt;strong&gt;DATE&lt;/strong&gt;类型用于表示日期值，不包含时间部分，在MySQL中，可以使用以下四种格式指定DATE类型的值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;以‘YYYY-MM-DD’或者‘YYYYMMDD’字符串格式表示。&lt;/li&gt;
+&lt;li&gt;以‘YY-MM-DD’或者‘YYMMDD’字符串格式表示。&lt;/li&gt;
+&lt;li&gt;以YY-MM-DD或者YYMMDD数字格式表示。&lt;/li&gt;
+&lt;li&gt;使用CURRENT_DATE或者NOW()表示当前系统日期。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TIME&lt;/strong&gt;类型&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIME&lt;/strong&gt;类型用于表示时间值，它的显示形式一般为HH:MM:SS，其中，HH表示小时，MM表示分，SS表示秒。&lt;/p&gt;
+&lt;p&gt;在MySQL中，可以使用以下三种格式指定TIME类型的值：&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;1.以‘D HH:MM:SS’字符串格式表示。&lt;/p&gt;
+&lt;p&gt;2.以‘HHMMSS’字符串格式或者HHMMSS数字格式表示。&lt;/p&gt;
+&lt;p&gt;3.使用CURRENT_TIME或NOW()输入当前系统时间。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;DATETIME&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;​         &lt;strong&gt;DATETIME&lt;/strong&gt;类型用于表示日期和时间，它的显示形式为‘YYYY-MM-DD HH:MM:SS’，其中，YYYY表示年，MM表示月，DD表示日，HH表示小时，MM表示分，SS表示秒。&lt;/p&gt;
+&lt;p&gt;在MySQL中，可以使用以下四种格式指定DATETIME类型的值：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;以‘YYYY-MM-DD HH:MM:SS’或者‘YYYYMMDDHHMMSS’字符串格式表示的日期和时间，取值范围为‘1000-01-01 00:00:00’~‘9999-12-3 23:59:59’。&lt;/li&gt;
+&lt;li&gt;以‘YY-MM-DD HH:MM:SS’或者‘YYMMDDHHMMSS’字符串格式表示的日期和时间，其中YY表示年，取值范围为‘00’~‘99’。&lt;/li&gt;
+&lt;li&gt;以YYYYMMDDHHMMSS或者YYMMDDHHMMSS数字格式表示的日期和时间。&lt;/li&gt;
+&lt;li&gt;使用NOW来输入当前系统的日期和时间。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;strong&gt;TIMESTAMP&lt;/strong&gt;类型&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;TIMESTAMP&lt;/strong&gt;类型用于表示日期和时间，它的显示形式同DATETIME相同，但取值范围比DATETIME小。&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;MySQL 获得当前日期时间函数&lt;/h3&gt;
+&lt;p&gt;1.获得当前日期+时间（YYYY-MM-DD HH:MM:SS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;now()&lt;/li&gt;
+&lt;li&gt;current_timestamp()&lt;/li&gt;
+&lt;li&gt;current_timestamp&lt;/li&gt;
+&lt;li&gt;localtime()&lt;/li&gt;
+&lt;li&gt;localtime&lt;/li&gt;
+&lt;li&gt;localtimestamp &lt;/li&gt;
+&lt;li&gt;localtimestamp()&lt;/li&gt;
+&lt;li&gt;sysdate()&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;2.获得当前时间（HH:MM:SS)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;curtime()&lt;/li&gt;
+&lt;li&gt;current_time()&lt;/li&gt;
+&lt;li&gt;current_time&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;3.获得当前日期（YYYY-MM-DD)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;curdate()&lt;/li&gt;
+&lt;li&gt;current_date()&lt;/li&gt;
+&lt;li&gt;current_date&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;字符串和二进制类型&lt;/h3&gt;
+&lt;p&gt;为了存储字符串、图片和声音等数据，MySQL提供了字符串和二进制类型&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="http://image-xiaowangwang.test.upcdn.net/%E7%BD%91%E7%AB%99%E7%94%A8%E5%9B%BE/%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%92%8C%E4%BA%8C%E8%BF%9B%E5%88%B6.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;CHAR&lt;/strong&gt;和&lt;strong&gt;VARCHAR&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;CHAR&lt;/strong&gt;和&lt;strong&gt;VARCHAR&lt;/strong&gt;类型都用来表示字符串数据，不同的是，&lt;strong&gt;VARCHAR&lt;/strong&gt;可以存储可变长度的字符串。&lt;/p&gt;
+&lt;p&gt;在MySQL中，定义&lt;strong&gt;CHAR&lt;/strong&gt;和&lt;strong&gt;VARCHAR&lt;/strong&gt;类型的方式如下所示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;CHAR(M)&lt;/strong&gt; 或 &lt;strong&gt;VARCHAR(M)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在上述定义方式中，M指的是字符串的最大长度。&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="http://image-xiaowangwang.test.upcdn.net/%E7%BD%91%E7%AB%99%E7%94%A8%E5%9B%BE/char%E5%92%8Cvarchar.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;从上表中可以看出，当数据为&lt;strong&gt;CHAR(4)&lt;/strong&gt;类型时，不管插入值的长度是多少，所占用的存储空间都是4个字节，而&lt;strong&gt;VARCHAR(4)&lt;/strong&gt;所对应的数据所占用的字节数为实际长度加1。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BINARY&lt;/strong&gt;和&lt;strong&gt;VARBINARY&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;BINARY&lt;/strong&gt;和&lt;strong&gt;VARBINARY&lt;/strong&gt;类型类似于&lt;strong&gt;CHAR&lt;/strong&gt;和&lt;strong&gt;VARCHAR&lt;/strong&gt;，不同的是，它们所表示的是二进制数据。&lt;/p&gt;
+&lt;p&gt;定义&lt;strong&gt;BINARY&lt;/strong&gt;和&lt;strong&gt;VARBINARY&lt;/strong&gt;类型的方式如下所示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;&lt;strong&gt;BINARY(M)&lt;/strong&gt; 或 &lt;strong&gt;VARBINARY(M)&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;需要注意的是，&lt;strong&gt;BINARY&lt;/strong&gt;类型的长度是固定的，如果数据的长度不足最大长度，将在数据的后面用“\0”补齐，最终达到指定长度。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;TEXT&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;TEXT类型用于表示大文本数据，例如，文章内容、评论等，它的类型分为四种：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th style="text-align:center"&gt;数据类型&lt;/th&gt;
+&lt;th&gt;存储范围&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;TINYTEXT&lt;/td&gt;
+&lt;td&gt;0 ~ 255字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;TEXT&lt;/td&gt;
+&lt;td&gt;0 ~ 65535字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;MEDIUMTEXT&lt;/td&gt;
+&lt;td&gt;0 ~ 16777215字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;LONGTEXT&lt;/td&gt;
+&lt;td&gt;0 ~ 4294967295字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BLOB&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;BLOB类型是一种特殊的二进制类型，它用于表示数据量很大的二进制数据，例如图片、PDF文档等。&lt;/p&gt;
+&lt;p&gt;BLOB类型分为四种：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th style="text-align:center"&gt;数据类型&lt;/th&gt;
+&lt;th&gt;存储范围&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;TINYBLOB&lt;/td&gt;
+&lt;td&gt;0 ~ 255字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;BLOB&lt;/td&gt;
+&lt;td&gt;0 ~ 65535字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;MEDIUMBLOB&lt;/td&gt;
+&lt;td&gt;0 ~ 16777215字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;LONGBLOB&lt;/td&gt;
+&lt;td&gt;0 ~ 4294967295字节&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;需要注意的是，BLOB类型与TEXT类型很相似，但BLOB类型数据是根据二进制编码进行比较和排序，而TEXT类型数据是根据文本模式进行比较和排序。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;ENUM&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;ENUM&lt;/strong&gt;类型又称为枚举类型。&lt;/p&gt;
+&lt;p&gt;定义&lt;strong&gt;ENUM&lt;/strong&gt;类型的数据格式如下所示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;ENUM('值1', '值2', '值3'……'值n')&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在上述格式中，('值1', '值2', '值3'……'值n')称为枚举列表，&lt;strong&gt;ENUM&lt;/strong&gt;类型的数据只能从枚举列表中取，并且只能取一个。&lt;/p&gt;
+&lt;p&gt;需要注意的是，枚举列举中的每个值都有一个顺序编号，MySQL中存入的就是这个顺序编号，而不是列表中的值。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SET&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;SET类型用于表示字符串对象，它的值可以有零个或多个，SET类型数据的定义格式与ENUM类型类似，具体语法格式如下所示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;SET('值1', '值2', '值3'……'值n')&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;与ENUM类型相同，('值1', '值2', '值3'……'值n')列表中的每个值都有一个顺序编号，MySQL中存入的也是这个顺序编号，而不是列表中的值。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;BIT&lt;/strong&gt;类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;BIT类型用于表示二进制数据。定义BIT类型的基本语法格式如下所示：&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;BIT(M)&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;在上述格式中，M用于表示每个值的位数，范围为1~64。&lt;/p&gt;
+&lt;p&gt;需要注意的是，如果分配的BIT(M)类型的数据长度小于M，将在数据的左边用0补齐。&lt;/p&gt;
+&lt;h2&gt;数据表的基本操作&lt;/h2&gt;
+&lt;p&gt;在以下语法格式中出现的[ ]内的内容均表示可选&lt;/p&gt;
+&lt;h3&gt;创建数据表&lt;/h3&gt;
+&lt;p&gt;创建数据表之前需要使用&lt;code&gt;USE 数据库名；&lt;/code&gt;选择操作在哪个数据库进行。&lt;/p&gt;
+&lt;p&gt;语法格式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名
+
+(
+
+ 字段名1,数据类型[完整性约束条件],
+
+字段名2,数据类型[完整性约束条件],
+
+．．．．．．
+
+字段名n,数据类型[完整性约束条件],
+
+);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;查看数据表&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;strong&gt;SHOW CREATE TABLE&lt;/strong&gt;查看数据表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在MySQL中，&lt;strong&gt;SHOW CREATE TABLE&lt;/strong&gt;语句不仅可以查看创建表时的定义语句，还可以查看表的字符编码。SHOW &lt;strong&gt;CREATE TABLE&lt;/strong&gt;语句的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SHOW CREATE TABLE 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;使用&lt;strong&gt;DESCRIBE&lt;/strong&gt;语句查看数据表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在MySQL中，使用&lt;strong&gt;DESCRIBE&lt;/strong&gt;语句可以查看表的字段信息，其中包括字段名、字段类型等信息。&lt;strong&gt;DESCRIBE&lt;/strong&gt;语句的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DESCRIBE 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;或简写为：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DESC 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;修改数据表&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;修改数据表名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在数据库中，不同的数据表是通过表名来区分的。在MySQL中，修改表名的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 旧表名 RENAME [TO] 新表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“旧表名”指的是修改前的表名，“新表名”指的是修改后的表名，关键字TO是可选的，其在SQL语句中是否出现不会影响语句的执行。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;修改字段名&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;数据表中的字段是通过字段名来区分的。在MySQL中，修改字段名的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 CHANGE 旧字段名 新字段名 新数据类型;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“旧字段名”指的是修改前的字段名，“新字段名”指的是修改后的字段名，“新数据类型”指的是修改后的数据类型。&lt;/p&gt;
+&lt;p&gt;需要注意的是，新数据类型不能为空，即使新字段与旧字段的数据类型相同，也必须将新数据类型设置为与原来一样的数据类型。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;修改字段的数据类型&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;修改字段的数据类型，就是将字段的数据类型转为另外一种数据类型。在MySQL中修改字段数据类型的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 MODIFY 字段名 数据类型;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“表名”指的是要修改字段所在的表名，“字段名”指的是要修改的字段，“数据类型”指的是修改后的字段的数据类型。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;添加字段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在MySQL中，添加字段的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD 新字段名 数据类型 [约束条件][FIRST|AFTER 已存在字段名]&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“新字段名”为添加字段的名称，“FIRST”为可选参数，用于将新添加的字段设置为表的第一个字段，“AFTER”也为可选参数，用于将新添加的字段添加到指定的“已存在字段名”的后面。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;删除字段&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;所谓删除字段指的是将某个字段从表中删除。在MySQL中，删除字段的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 DROP 字段名;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“字段名”指的是要删除的字段的名称。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;修改字段排列位置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在MySQL中，修改字段排列位置的基本语法格式如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE表名 MODIFY 字段名1 数据类型 FIRST|AFTER 字段名2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;在上述格式中，“字段名1”指的是修改位置的字段，“数据类型”指的是字段1的数据类型，“FIRST”为可选参数，指的是将字段1修改为表的第一个字段，“AFTER 字段名2”是将字段1插入到字段2的后面。&lt;/p&gt;
+&lt;h3&gt;删除数据表&lt;/h3&gt;
+&lt;p&gt;删除数据表是指删除数据库中已存在的表，在删除数据表的同时，数据表中存储的数据都将被删除。&lt;/p&gt;
+&lt;p&gt;在MySQL中，直接使用&lt;strong&gt;DROP TABLE&lt;/strong&gt;语句就可以删除没有被其它表关联的数据表，其基本的语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DROP TABLE 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;表的约束&lt;/h2&gt;
+&lt;p&gt;常见的几种表的约束&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th style="text-align:center"&gt;约束条件&lt;/th&gt;
+&lt;th&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;PRIMARY KEY&lt;/td&gt;
+&lt;td&gt;主键约束，用于唯一标识对应的记录&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;FOREIGN KEY&lt;/td&gt;
+&lt;td&gt;外键约束&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;NOT NULL&lt;/td&gt;
+&lt;td&gt;非空约束&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;UNIQUE&lt;/td&gt;
+&lt;td&gt;唯一性约束&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;DEFAULT&lt;/td&gt;
+&lt;td&gt;默认值约束，用于设置字段的默认值&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;主键约束&lt;/h3&gt;
+&lt;p&gt;在MySQL中，为了快速查找表中的某条信息，可以通过设置主键来实现。&lt;/p&gt;
+&lt;p&gt;主键约束是通过&lt;strong&gt;PRIMARY KEY&lt;/strong&gt;定义的，它可以唯一标识表中的记录，这就好比身份证可以用来标识人的身份一样&lt;/p&gt;
+&lt;p&gt;1.单字段主键&lt;/p&gt;
+&lt;p&gt;语法格式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字段名 数据类型 PRIMARY KEY&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;2.多字段主键&lt;/p&gt;
+&lt;p&gt;语法格式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;PRIMARY KEY (字段名1,字段名2,……字段名n)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;非空约束&lt;/h3&gt;
+&lt;p&gt;非空约束指的是字段的值不能为NULL，在MySQL中，非空约束是通过NOT NULL定义的，&lt;/p&gt;
+&lt;p&gt;其基本的语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字段名 数据类型 NOT NULL&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;唯一约束&lt;/h3&gt;
+&lt;p&gt;唯一约束用于保证数据表中字段的唯一性，即表中字段的值不能重复出现。唯一约束是通过UNIQUE定义的，其基本的语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字段名 数据类型 UNIQUE&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;默认约束&lt;/h3&gt;
+&lt;p&gt;默认约束用于给数据表中的字段指定默认值，即当在表中插入一条新记录时，如果没有给这个字段赋值，那么，数据库系统会自动为这个字段插入默认值。默认值是通过DEFAULT关键字定义的。&lt;/p&gt;
+&lt;p&gt;默认约束基本的语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字段名 数据类型 DEFAULT 默认值&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;设置表的字段值自动增加&lt;/h3&gt;
+&lt;p&gt;在数据表中，若想为表中插入的新记录自动生成唯一的ID，可以使用AUTO_INCREMENT约束来实现。&lt;/p&gt;
+&lt;p&gt;AUTO_INCREMENT约束的字段可以是任何整数类型。&lt;/p&gt;
+&lt;p&gt;默认情况下，该字段的值是从1开始自增的。&lt;/p&gt;
+&lt;p&gt;使用AUTO_INCREMENT设置表字段值自动增加的基本语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;字段名 数据类型 AUTO_INCREMENT&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;索引&lt;/h2&gt;
+&lt;p&gt;数据库的索引好比新华字典的音序表，它是对数据库表中一列或多列的值进行排序后的一种结构，其作用就是提高表中数据的查询速度。&lt;/p&gt;
+&lt;p&gt;MySQL中的索引分为很多种，具体如下：&lt;/p&gt;
+&lt;p&gt;1、普通索引&lt;/p&gt;
+&lt;p&gt;2、唯一性索引&lt;/p&gt;
+&lt;p&gt;3、全文索引&lt;/p&gt;
+&lt;p&gt;4、单列索引&lt;/p&gt;
+&lt;p&gt;5、多列索引&lt;/p&gt;
+&lt;p&gt;6、空间索引&lt;/p&gt;
+&lt;h3&gt;创建索引语法格式&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;一、创建表时创建&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 ［UNIQUE|FULLTEXT|SPATIAL］ INDEX|KEY [别名] (字段名1 [(长度)] [ASC|DESC])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;UNIQUE：可选参数，表示唯一性约束&lt;/p&gt;
+&lt;p&gt;FULLTEXT：可选参数，表示全文约束&lt;/p&gt;
+&lt;p&gt;SPATIAL：可选参数，表示空间约束&lt;/p&gt;
+&lt;p&gt;INDEX和KEY：用来表示字段的索引，二者选一即可&lt;/p&gt;
+&lt;p&gt;别名：可选参数，表示创建的索引的名称&lt;/p&gt;
+&lt;p&gt;字段名1：指定索引对应字段的名称&lt;/p&gt;
+&lt;p&gt;长度：可选参数，用于表示索引的长度&lt;/p&gt;
+&lt;p&gt;ASC和DESC：可选参数，其中，ASC表示升序排列，DESC表示降序排列&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;若想在一个已经存在的表上创建索引，可以使用CREATE INDEX语句，&lt;/p&gt;
+&lt;p&gt;CREATE INDEX语句创建索引的具体语法格式如下所示：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE [UNIQUE|FULLTEXT|SPATIAL] INDEX 索引名 ON 表名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD [UNIQUE|FULLTEXT|SPATIAL]  INDEX 索引名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建普通索引&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;一、创建表时创建&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;语法格式：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 INDEX [别名] [别名] (字段名1 [(长度)] [ASC|DESC])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE INDEX 索引名 ON 表名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD INDEX 索引名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建唯一性索引&lt;/h3&gt;
+&lt;p&gt;一、创建表时创建&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 UNIQUE INDEX [别名] (字段名1 [(长度)] [ASC|DESC])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE UNIQUE INDEX 索引名 ON 表名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD UNIQUE INDEX 索引名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建全文索引&lt;/h3&gt;
+&lt;p&gt;一、创建表时创建&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 FULLTEXT INDEX [别名] (字段名1 [(长度)] [ASC|DESC])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE FULLTEXT INDEX 索引名 ON 表名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD FULLTEXT INDEX 索引名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建单列索引&lt;/h3&gt;
+&lt;p&gt;一、创建表示创建&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 INDEX [别名] (字段名1 [(长度)] [ASC|DESC])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE INDEX 索引名 ON 表名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD  INDEX 索引名 (字段名 [(长度)] [ASC|DESC]);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建多列索引&lt;/h3&gt;
+&lt;p&gt;一、创建表时创建&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE 表名(
+                 字段名1,数据类型[完整性约束条件],
+                 字段名2,数据类型[完整性约束条件],
+                 ．．．．．．
+                 字段名n,数据类型[完整性约束条件],
+                 INDEX [别名] (字段名1 [(长度)],字段名2 [(长度)])
+                  );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE INDEX 索引名 ON 表名 (字段名1 [(长度)],字段名2 [(长度)] );&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD  INDEX 索引名 (字段名1 [(长度)],字段名2 [(长度)] );&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;创建空间索引&lt;/h3&gt;
+&lt;p&gt;创建一个表名为t6的表，在空间类型为GEOMETRY的字段上创建空间索引，SQL语句如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE t6(
+                id INT,
+                space GEOMETRY NOT NULL,
+                SPATIAL INDEX sp(space)
+                )ENGINE=MyISAM;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;需要注意的是，创建空间索引时，所在字段的值不能为空值，并且表的存储引擎为MyISAM。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;二、使用CREATE INDEX 语句在已经存在的表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE SPATIAL INDEX 索引名 ON 表名 (字段名);&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;三、使用ALTER TABLE语句在已经存在表上创建索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 ADD SPATIAL INDEX 索引名 (字段名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;删除索引&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;1、使用ALTER TABLE删除索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;ALTER TABLE 表名 DROP INDEX 索引;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;2、使用DROP INDEX删除索引&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;DROP INDEX 索引名 ON 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;添加数据&lt;/h2&gt;
+&lt;h3&gt;为表中所有字段添加数据&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;一、INSERT语句中指定所有字段名&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INSERT INTO 表名(字段名1，字段名2，……) 
+VALUES(值1，值2，……);&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“字段名1，字段名2，……”表示数据表中的字段名称，此处必须列出表所有字段的名称；&lt;/p&gt;
+&lt;p&gt;“值1，值2，……”表示每个字段的值，每个值的顺序、类型必须与对应的字段相匹配。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;二、INSERT语句中不指定字段名&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;INSERT INTO 表名 VALUES(值1，值2，……);&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“值1，值2，……”用于指定要添加的数据。&lt;/p&gt;
+&lt;p&gt;需要注意的是，由于INSERT语句中没有指定字段名，添加的值的顺序必须和字段在表中定义的顺序相同。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;为表中指定字段添加数据&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;INSERT INTO 表名(字段1,字段2，…)
+            VALUES(值1,值2,…);&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“字段1，字段2，…”表示数据表中的字段名称，此次只指定表中部分字段的名称。&lt;/p&gt;
+&lt;p&gt;“值1，值2，……”表示指定字段的值，每个值的顺序、类型必须与对应的字段相匹配&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;同时添加多条记录&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;INSERT INTO 表名[(字段1,字段2，…)]
+            VALUES(值1,值2,…),
+                  (值1,值2,…),
+                    ... ...
+                  (值1,值2,…),;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;更新数据&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;UPDATE 表名
+    SET 字段名1 = 值1[，字段名2 = 值2，……]
+    [WHERE 条件表达式];&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“字段名1”，“字段名2”用于指定要更新的字段名称，&lt;/p&gt;
+&lt;p&gt;“值1”，“值2”用于表示字段更新的新数据。&lt;/p&gt;
+&lt;p&gt;“WHERE条件表达式”是可选的，用于指定更新数据需要满足的条件。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;删除数据&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;DELETE FROM 表名 [WHERE 条件表达式];&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“表名”指定要执行删除操作的表，WHERE子句为可选参数，&lt;/p&gt;
+&lt;p&gt;用于指定删除的条件，满足条件的记录会被删除。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;简单查询&lt;/h2&gt;
+&lt;h3&gt;SELECT 语句&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT  [DISTINCT] *|{字段名1, 字段名2, 字段名3,……}
+             FROM 表名
+             [WHERE 条件表达式1]
+             [GROUP BY 字段名 [HAVING 条件表达式2]]
+             [ORDER BY 字段名 [ASC|DESC]]
+             [LIMIT [OFFSET] 记录数]&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;“字段1，字段2...”表示从表中查询的指定字段&lt;/p&gt;
+&lt;p&gt;星号（“*”）通配符表示表中所有字段，两者为互斥关系，任选其一&lt;/p&gt;
+&lt;p&gt;“DISTINCT”是可选参数，用于剔除查询结果中重复的数据&lt;/p&gt;
+&lt;p&gt;FROM 表名    表示从指定的表中查询数据&lt;/p&gt;
+&lt;p&gt;“WHERE”是可选参数，用于指定查询条件&lt;/p&gt;
+&lt;p&gt;“GROUP BY”是可选参数，用于将查询结果按照指定字段进行分组，“HAVING”也是可选参数，用于对分组后的结果进行过滤。&lt;/p&gt;
+&lt;p&gt;“ORDER BY”是可选参数，用于将查询结果按照指定字段进行排序。排序方式由参数ASC或DESC控制，其中ASC表示按升序进行排列，DESC表示按降序进行排列。如果不指定参数，默认为升序排列。&lt;/p&gt;
+&lt;p&gt;“LIMIT”是可选参数，用于限制查询结果的数量。LIMIT后面可以跟2个参数第一个参数“OFFSET”表示偏移量，如果偏移量为0则从查询结果的第一条记录开始...以此类推。如果不指定OFFSET，其默认值为0。第二个参数“记录数”表示返回查询记录的条数。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;查询所有字段&lt;/h3&gt;
+&lt;p&gt;&lt;strong&gt;一、指定所有字段&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT 字段名1,字段名2,…… FROM  表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;二、使用星号(“*”)通配符代替所有字段&lt;/strong&gt;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT  * FROM  表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;查询指定字段&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT 字段名1,字段名2,…… FROM  表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;条件查询&lt;/h2&gt;
+&lt;p&gt;SELECT语句中最常见的是使用&lt;strong&gt;WHERE&lt;/strong&gt;子句指定查询条件&lt;strong&gt;，&lt;/strong&gt;带有&lt;strong&gt;WHERE&lt;/strong&gt;子句的查询有八种&lt;/p&gt;
+&lt;h3&gt;带关系运算符的查询&lt;/h3&gt;
+&lt;p&gt;用于对数据进行过滤&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT 字段名1,字段名2,……
+     FROM 表名
+     WHERE 条件表达式;&lt;/code&gt;&lt;/pre&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th style="text-align:center"&gt;关系运算符&lt;/th&gt;
+&lt;th style="text-align:center"&gt;说明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;=&lt;/td&gt;
+&lt;td style="text-align:center"&gt;等于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;&amp;lt;&amp;gt;&lt;/td&gt;
+&lt;td style="text-align:center"&gt;不等于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;!=&lt;/td&gt;
+&lt;td style="text-align:center"&gt;不等于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;&amp;lt;&lt;/td&gt;
+&lt;td style="text-align:center"&gt;小于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;&amp;lt;=&lt;/td&gt;
+&lt;td style="text-align:center"&gt;小于等于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;&amp;gt;&lt;/td&gt;
+&lt;td style="text-align:center"&gt;大于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style="text-align:center"&gt;&amp;gt;=&lt;/td&gt;
+&lt;td style="text-align:center"&gt;大于等于&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h3&gt;带IN关键字的查询&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|字段名1,字段名2,……
+FROM 表名
+WHERE 字段名 [NOT] IN (元素1,元素2,……);&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;带BETWEEN  AND关键字的查询&lt;/h3&gt;
+&lt;p&gt;用于判断某个字段的值是否在指定的范围之内&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|{字段名1,字段名2,……}
+FROM 表名
+WHERE 字段名 [NOT] BETWEEN 值1 AND 值2;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;空值查询&lt;/h3&gt;
+&lt;p&gt;用于判断某些列是否有NULL值&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|字段名1,字段名2,……
+FROM 表名
+WHERE 字段名IS [NOT] NULL;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;带DISTINCT关键字的查询&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT DISTINCT 字段名 FROM 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;DISTINCT关键字作用于多个字段&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT DISTINCT 字段名1,字段名2,…… 
+FROM 表名;&lt;/code&gt;&lt;/pre&gt;
+&lt;blockquote&gt;&lt;p&gt;在上面的语法格式中，只有DISTINCT关键字后指定的多个字段值都相同，才会被认作是重复记录。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;带LIKE关键字的查询&lt;/h3&gt;
+&lt;p&gt;用于判断两个字符串是否相匹配&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|{字段名1,字段名2,……}
+FROM 表名
+WHERE 字段名 [NOT] LIKE '匹配字符串';&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;LIKE语法格式中的“匹配字符串”指定用来匹配的字符串，其值可以是一个普通字符串，也可以是包含百分号(%)和下划线(_)的通配字符串。&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;百分号(%)：可以匹配任意长度的字符串，包括空字符串&lt;/p&gt;
+&lt;p&gt;下划线(_)：下划线通配符只匹配单个字符，如果要匹配多个字符，需要使用多个下划线通配符。&lt;/p&gt;
+&lt;p&gt;百分号和下划线是通配符，它们在通配字符串中有特殊含义，因此，如果要匹配字符串中的百分号和下划线，就需要在通配字符串中使用右斜线(“\”)对百分号和下划线进行转义，例如，“\%”匹配百分号字面值，“_”匹配下划线字面值。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h3&gt;带AND关键字的多条件查询&lt;/h3&gt;
+&lt;p&gt;用于连接两个或者多个查询条件&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|{字段名1,字段名2,……}
+
+FROM 表名
+
+WHERE 条件表达式1 […… AND 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;带OR关键字的多条件查询&lt;/h3&gt;
+&lt;p&gt;记录满足任意一个条件即被查出&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;SELECT *|{字段名1,字段名2,……}
+FROM 表名
+WHERE 条件表达式1 OR […… OR 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;OR和AND关键字一起使用的情况&lt;/h3&gt;
+&lt;p&gt;AND的优先级高于OR，因此当两者在一起使用时，应该先运算AND两边的条件表达式，再运算OR两边的条件表达式。&lt;/p&gt;
+</content><link href="/wiki/archives/mysql_notes/" rel="alternate"/><published>2020-04-09T19:30:00+08:06</published></entry><entry><id>/wiki/archives/computer_question/</id><title>电脑常见问题</title><updated>2021-09-15T03:15:17.741497+00:00</updated><author><name>dachunwang</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
+&lt;p&gt;1、在运行对话框中输入： &lt;code&gt;msconfig&lt;/code&gt;，点击确定或者回车，打开系统配置窗口；&lt;/p&gt;
+&lt;p&gt;2、在系统配置窗口中，点击【引导】，在引导标签下，点击不需要的开机启动项，如 Windows 7，再点击：删除；&lt;/p&gt;
+&lt;p&gt;3、如果还有需要删除的开机启动项，则继续点击，如 Windows 8.1，再点击：删除；&lt;/p&gt;
+&lt;p&gt;4、接着我们点击系统配置窗口底部的【应用】和【确定】；&lt;/p&gt;
+&lt;p&gt;5、此时会弹出一个 系统配置 对话框，我们点击：立即重新启动。&lt;/p&gt;
+&lt;h2&gt;查看已激活的系统密钥&lt;/h2&gt;
+&lt;p&gt;1、按【WIN+Q】，输入&lt;code&gt;cmd&lt;/code&gt; 并点击【以管理员身份运行】；&lt;/p&gt;
+&lt;p&gt;2、输入下下面代码，并按【Enter】执行：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;wmic path softwarelicensingservice get OA3xOriginalProductKey&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;电脑图标变白&lt;/h2&gt;
+&lt;p&gt;1、随便打开一个文件夹，选择上方的 " 查看 "，再勾选 " 隐藏的项目 " ;&lt;/p&gt;
+&lt;p&gt;2、同时按下 " WIN + R" ，在打开的运行窗口输入&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;%localappdata%&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;3、在打开的文件夹中找到 " lconcache.db " ，将其删除 ;&lt;/p&gt;
+&lt;p&gt;4、在任务栏上右击，选择 " 任务管理器 " ;&lt;/p&gt;
+&lt;p&gt;5、右击 "Windows资源管理器 " ,选择 " 重新启动 " 即可重建图标缓存。&lt;/p&gt;
+</content><link href="/wiki/archives/computer_question/" rel="alternate"/><published>2021-01-13T19:30:00+08:06</published></entry><entry><id>/wiki/archives/wiring/</id><title>网线水晶头接法</title><updated>2021-09-15T03:15:17.741468+00:00</updated><author><name>dachunwang</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="610" src="https://gallery.dachunwang.top/img/20210121110106.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;网线水晶头的排布标准&lt;/h2&gt;
+&lt;h3&gt;直通线&lt;/h3&gt;
+&lt;p&gt;直通线接法即常用接法，两头排线顺序相同，用于连接不同类型设备&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="591" src="https://gallery.dachunwang.top/img/20210121110155.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;交叉线&lt;/h3&gt;
+&lt;p&gt;交叉线接法即号称超六类接法，用于连接相同类型设备&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="609" src="https://gallery.dachunwang.top/img/20210121110231.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+</content><link href="/wiki/archives/wiring/" rel="alternate"/><published>2021-01-21T11:10:00+08:06</published></entry><entry><id>/wiki/archives/Git_install/</id><title>Windows系统Git安装</title><updated>2021-09-15T03:15:17.741415+00:00</updated><author><name>xiaowangwang</name><email>iloveyichen@aliyun.com</email><uri>https://www.imalan.cn</uri></author><content>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
+&lt;h3&gt;下载Git安装程序&lt;/h3&gt;
+&lt;p&gt;Git官网下载，网站地址：&lt;a href="https://git-scm.com/downloads"&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;安装Git&lt;/h3&gt;
+&lt;p&gt;1.双击下载好的安装包&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="959" data-height="59" src="https://gallery.dachunwang.top/img/20210307142123.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;2.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142216.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;3.更改安装位置，然后点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142358.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;4.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142459.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;5.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142548.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;6.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142617.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;7.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142648.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;8.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142718.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;9.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142746.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;10.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142819.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;11.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142847.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;12.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142920.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;13.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142947.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;14.点击 &lt;code&gt;Next&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143022.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;15.点击 &lt;code&gt;Install&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143044.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;16.安装完成&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143324.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+</content><link href="/wiki/archives/Git_install/" rel="alternate"/><published>2021-04-16T11:30:00+08:06</published></entry></feed>
