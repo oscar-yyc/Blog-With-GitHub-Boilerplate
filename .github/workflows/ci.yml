@@ -9,7 +9,7 @@ jobs:
   build:
 
     runs-on: ubuntu-latest
-    name: Tencent Cloudbase Github Action Example
+    
     steps:
     - uses: actions/checkout@v2
 
@@ -74,7 +74,7 @@ jobs:
         PUBLISH_BRANCH: master
         PUBLISH_DIR: ./dist
       with:
-        secretId: ${{ secrets.SECRETID }}
-        secretKey: ${{ secrets.SECRETKEY }}
-        envId: ${{ secrets.ENVID }}
+        secretId: ${{ secrets.SECRET_ID }}
+        secretKey: ${{ secrets.SECRET_KEY }}
+        envId: ${{ secrets.ENV_ID }}
         staticSrcPath: dist
