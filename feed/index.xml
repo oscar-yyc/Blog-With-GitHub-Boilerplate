@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/wiki/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/wiki/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/wiki/</link></image><language>zh-CN</language><lastBuildDate>Wed, 15 Sep 2021 05:30:12 +0806</lastBuildDate><pubDate>Wed, 15 Sep 2021 05:30:12 +0806</pubDate><item><title>Hello World!</title><link>/wiki/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Wed, 15 Sep 2021 06:09:58 +0806</lastBuildDate><pubDate>Wed, 15 Sep 2021 06:09:58 +0806</pubDate><item><title>Hello World!</title><link>/archives/typography/</link><description>&lt;div class="notice"&gt;这是一篇示例文章，在这里你可以看到常用页面元素的显示效果，同时也是 Markdown 语法的参考文章。保留或者删除本文，开始自己的创作吧！&lt;/div&gt;&lt;h2&gt;L2 Heading&lt;/h2&gt;
 &lt;h3&gt;L3 Heading&lt;/h3&gt;
 &lt;h4&gt;L4 Heading&lt;/h4&gt;
 &lt;h5&gt;L5 Heading&lt;/h5&gt;
@@ -50,15 +50,15 @@
 &lt;p&gt;$$C_{m\times k}=A_{m\times n}\cdot B_{n\times k}$$&lt;/p&gt;
 &lt;h2&gt;Figures&lt;/h2&gt;
 &lt;h3&gt;Single figure&lt;/h3&gt;
-&lt;p&gt;&lt;figure&gt;&lt;img data-width="836" data-height="450" src="/wiki/archives/assets/e0affbc80ccb2d596c87b520e37e7071.jpg" alt="Princess Mononoke" /&gt;&lt;figcaption&gt;Princess Mononoke&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="836" data-height="450" src="/archives/assets/e0affbc80ccb2d596c87b520e37e7071.jpg" alt="Princess Mononoke" /&gt;&lt;figcaption&gt;Princess Mononoke&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h3&gt;Photoset&lt;/h3&gt;
 &lt;div class="photos"&gt;
-&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/wiki/archives/assets/4956a144888cdbbb6c2df1d1d15384b0.jpeg" alt="" /&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img data-width="2690" data-height="2688" src="/wiki/archives/assets/4c66f0da616b08325b3aaa4c8b3f68e1.jpg" alt="" /&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/wiki/archives/assets/8b4d2334469ffa39b59e6fdb37c8c601.jpeg" alt="" /&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div class="photos"&gt;
-&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/wiki/archives/assets/0f5023d542a33e7c9d270f3cd6a99562.jpeg" alt="" /&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/wiki/archives/assets/20ec69d2a0276336f95e11f42866d17f.jpeg" alt="" /&gt;&lt;/figure&gt;
-&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/wiki/archives/assets/2b8af25285e5a193729a350593113bad.jpeg" alt="" /&gt;&lt;/figure&gt;&lt;/div&gt;&lt;h2&gt;Table&lt;/h2&gt;
+&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/archives/assets/4956a144888cdbbb6c2df1d1d15384b0.jpeg" alt="" /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img data-width="2690" data-height="2688" src="/archives/assets/4c66f0da616b08325b3aaa4c8b3f68e1.jpg" alt="" /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/archives/assets/8b4d2334469ffa39b59e6fdb37c8c601.jpeg" alt="" /&gt;&lt;/figure&gt;&lt;/div&gt;&lt;div class="photos"&gt;
+&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/archives/assets/0f5023d542a33e7c9d270f3cd6a99562.jpeg" alt="" /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/archives/assets/20ec69d2a0276336f95e11f42866d17f.jpeg" alt="" /&gt;&lt;/figure&gt;
+&lt;figure&gt;&lt;img data-width="4032" data-height="2688" src="/archives/assets/2b8af25285e5a193729a350593113bad.jpeg" alt="" /&gt;&lt;/figure&gt;&lt;/div&gt;&lt;h2&gt;Table&lt;/h2&gt;
 &lt;table&gt;
 &lt;thead&gt;&lt;tr&gt;
 &lt;th&gt;header&lt;/th&gt;
@@ -78,7 +78,7 @@
 &lt;/table&gt;
 &lt;h2&gt;Link Card&lt;/h2&gt;
 &lt;div class="links"&gt;
-&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><author>iloveyichen@aliyun.com (AlanDecode)</author><guid isPermaLink="true">/wiki/archives/typography/</guid><pubDate>Wed, 18 Dec 2019 16:50:00 +0806</pubDate></item><item><title>MySQL学习笔记</title><link>/wiki/archives/mysql_notes/</link><description>&lt;h2&gt;数据库基础知识&lt;/h2&gt;
+&lt;a style="display:block" target="_blank" href="https://www.imalan.cn" class="board-item"&gt;                 &lt;div class="board-thumb"&gt;&lt;img src="https://secure.gravatar.com/avatar/1741a6eef5c824899e347e4afcbaa75d?s=200&amp;r=G&amp;d="&gt;&lt;/div&gt;                 &lt;div class="board-title"&gt;AlanDecode&lt;/div&gt;&lt;/a&gt;&lt;/div&gt;&lt;hr&gt;&lt;div class="footnotes"&gt;&lt;ol&gt;&lt;li id="fn_1"&gt;Home page for AlanDecode &lt;a no-style href="#fn_ref_1"&gt;↩&lt;/a&gt;&lt;/li&gt;&lt;/ol&gt;&lt;/div&gt;</description><author>iloveyichen@aliyun.com (AlanDecode)</author><guid isPermaLink="true">/archives/typography/</guid><pubDate>Wed, 18 Dec 2019 16:50:00 +0806</pubDate></item><item><title>MySQL学习笔记</title><link>/archives/mysql_notes/</link><description>&lt;h2&gt;数据库基础知识&lt;/h2&gt;
 &lt;h3&gt;数据库概述&lt;/h3&gt;
 &lt;p&gt;数据库：（Database，DB）是按照数据结构来组织、存储和管理数据的仓库，其本身可看作电子化的文件柜，用户可以对文件中的数据进行增加、删除、修改、查找等操作。&lt;/p&gt;
 &lt;p&gt;数据库系统：由数据库、数据库管理系统、数据库应用程序等组成。&lt;/p&gt;
@@ -858,7 +858,7 @@ FROM 表名
 WHERE 条件表达式1 OR […… OR 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;OR和AND关键字一起使用的情况&lt;/h3&gt;
 &lt;p&gt;AND的优先级高于OR，因此当两者在一起使用时，应该先运算AND两边的条件表达式，再运算OR两边的条件表达式。&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/wiki/archives/mysql_notes/</guid><pubDate>Thu, 09 Apr 2020 19:30:00 +0806</pubDate></item><item><title>电脑常见问题</title><link>/wiki/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
+</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/archives/mysql_notes/</guid><pubDate>Thu, 09 Apr 2020 19:30:00 +0806</pubDate></item><item><title>电脑常见问题</title><link>/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
 &lt;p&gt;1、在运行对话框中输入： &lt;code&gt;msconfig&lt;/code&gt;，点击确定或者回车，打开系统配置窗口；&lt;/p&gt;
 &lt;p&gt;2、在系统配置窗口中，点击【引导】，在引导标签下，点击不需要的开机启动项，如 Windows 7，再点击：删除；&lt;/p&gt;
 &lt;p&gt;3、如果还有需要删除的开机启动项，则继续点击，如 Windows 8.1，再点击：删除；&lt;/p&gt;
@@ -877,7 +877,7 @@ WHERE 条件表达式1 OR […… OR 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;3、在打开的文件夹中找到 " lconcache.db " ，将其删除 ;&lt;/p&gt;
 &lt;p&gt;4、在任务栏上右击，选择 " 任务管理器 " ;&lt;/p&gt;
 &lt;p&gt;5、右击 "Windows资源管理器 " ,选择 " 重新启动 " 即可重建图标缓存。&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/wiki/archives/computer_question/</guid><pubDate>Wed, 13 Jan 2021 19:30:00 +0806</pubDate></item><item><title>网线水晶头接法</title><link>/wiki/archives/wiring/</link><description>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
+</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/archives/computer_question/</guid><pubDate>Wed, 13 Jan 2021 19:30:00 +0806</pubDate></item><item><title>网线水晶头接法</title><link>/archives/wiring/</link><description>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="610" src="https://gallery.dachunwang.top/img/20210121110106.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;网线水晶头的排布标准&lt;/h2&gt;
 &lt;h3&gt;直通线&lt;/h3&gt;
@@ -886,7 +886,7 @@ WHERE 条件表达式1 OR […… OR 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;交叉线&lt;/h3&gt;
 &lt;p&gt;交叉线接法即号称超六类接法，用于连接相同类型设备&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="609" src="https://gallery.dachunwang.top/img/20210121110231.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/wiki/archives/wiring/</guid><pubDate>Thu, 21 Jan 2021 11:10:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/wiki/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
+</description><author>iloveyichen@aliyun.com (dachunwang)</author><guid isPermaLink="true">/archives/wiring/</guid><pubDate>Thu, 21 Jan 2021 11:10:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
 &lt;h3&gt;下载Git安装程序&lt;/h3&gt;
 &lt;p&gt;Git官网下载，网站地址：&lt;a href="https://git-scm.com/downloads"&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
@@ -923,4 +923,4 @@ WHERE 条件表达式1 OR […… OR 条件表达式n];&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143044.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;16.安装完成&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143324.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (xiaowangwang)</author><guid isPermaLink="true">/wiki/archives/Git_install/</guid><pubDate>Fri, 16 Apr 2021 11:30:00 +0806</pubDate></item></channel></rss>
+</description><author>iloveyichen@aliyun.com (xiaowangwang)</author><guid isPermaLink="true">/archives/Git_install/</guid><pubDate>Fri, 16 Apr 2021 11:30:00 +0806</pubDate></item></channel></rss>
