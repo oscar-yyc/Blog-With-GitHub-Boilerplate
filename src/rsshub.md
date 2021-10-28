@@ -1,15 +1,15 @@
 ---
 layout: post
-title: Rss订阅设置
-slug:Rss_setl
-date: 2021/5/16 11:30:00
+title: Rss
+slug: Rss
+date: 2021/1/23 19:30:00
 status: publish
-author: xiaowangwang
+author: dachunwang
 categories: 
-  - 编程开发
-  - 软件安装
+  - 日常技巧
 
-tags: Rss
+tags: 
+  - Rss
 ---
 
 ## bilibili
