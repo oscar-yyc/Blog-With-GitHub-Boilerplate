@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sun, 31 Oct 2021 06:28:34 +0806</lastBuildDate><pubDate>Sun, 31 Oct 2021 06:28:34 +0806</pubDate><item><title>电脑常见问题</title><link>/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Sun, 31 Oct 2021 06:40:49 +0806</lastBuildDate><pubDate>Sun, 31 Oct 2021 06:40:49 +0806</pubDate><item><title>电脑常见问题</title><link>/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
 &lt;p&gt;1、在运行对话框中输入： &lt;code&gt;msconfig&lt;/code&gt;，点击确定或者回车，打开系统配置窗口；&lt;/p&gt;
 &lt;p&gt;2、在系统配置窗口中，点击【引导】，在引导标签下，点击不需要的开机启动项，如 Windows 7，再点击：删除；&lt;/p&gt;
 &lt;p&gt;3、如果还有需要删除的开机启动项，则继续点击，如 Windows 8.1，再点击：删除；&lt;/p&gt;
@@ -23,7 +23,56 @@
 &lt;h2&gt;网线水晶头的排布标准&lt;/h2&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="591" src="https://gallery.dachunwang.top/img/20210121110155.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="609" src="https://gallery.dachunwang.top/img/20210121110231.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (向日葵旺)</author><guid isPermaLink="true">/archives/wiring/</guid><pubDate>Thu, 21 Jan 2021 11:10:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
+</description><author>iloveyichen@aliyun.com (向日葵旺)</author><guid isPermaLink="true">/archives/wiring/</guid><pubDate>Thu, 21 Jan 2021 11:10:00 +0806</pubDate></item><item><title>Git、NPM 和 Yarn  代理加速</title><link>/archives/Git_proxy/</link><description>&lt;h2&gt;配置Git代理&lt;/h2&gt;
+&lt;p&gt;Git 同时支持 &lt;code&gt;http&lt;/code&gt; 代理和 &lt;code&gt;socks5&lt;/code&gt; 代理，二选一即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# http代理
+$ git config --global http.proxy http://server:port
+$ git config --global https.proxy http://server:port
+# socks5代理
+$ git config --global http.proxy socks5://127.0.0.1:10808
+$ git config --global https.proxy socks5://127.0.0.1:10808&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以 CFW 代理工具为例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# http代理
+$ git config --global http.proxy http://127.0.0.1:10809
+$ git config --global https.proxy http://127.0.0.1:10809
+# socks5代理
+$ git config --global http.proxy socks5://127.0.0.1:10808
+$ git config --global https.proxy socks5://127.0.0.1:10808&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消 Git 代理：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ git config --global --unset http.proxy
+$ git config --global --unset https.proxy&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;配置NPM代理&lt;/h2&gt;
+&lt;p&gt;NPM 原生支持 &lt;code&gt;http&lt;/code&gt; 代理类型，但是不支持 &lt;code&gt;socks5&lt;/code&gt; 代理类型，如果还想要使用 &lt;code&gt;socks5&lt;/code&gt; 代理，可能还需要使用一个工具使用 &lt;code&gt;http&lt;/code&gt; 监听 &lt;code&gt;socks5&lt;/code&gt; 代理 （禁止套娃），此处不做讨论&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# http代理
+$ npm config set proxy http://server:port
+$ npm config set https-proxy http://server:port&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以 CFW 代理工具为例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ npm config set proxy http://127.0.0.1:10809
+$ npm config set https-proxy http://127.0.0.1:10809&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消 NPM 代理：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ npm config delete proxy
+$ npm config delete https-proxy&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;配置Yarn代理&lt;/h2&gt;
+&lt;p&gt;Yarn 原生就拥有比 NPM 更快的速度，类似 NPM，使用 &lt;code&gt;http&lt;/code&gt; 代理（必要的话），打开 Terminal/Bash：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# http代理
+$ yarn config set proxy http://server:port
+$ yarn confit set https-proxy http://server:port&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;以 CFW 代理工具为例：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ yarn config set proxy http://127.0.0.1:10809
+$ yarn confit set https-proxy http://127.0.0.1:10809&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;取消 Yarn 代理：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$ yarn config delete proxy
+$ yarn config delete https-proxy&lt;/code&gt;&lt;/pre&gt;
+</description><author>iloveyichen@aliyun.com (向日葵旺)</author><guid isPermaLink="true">/archives/Git_proxy/</guid><pubDate>Tue, 16 Feb 2021 11:30:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
 &lt;h3&gt;下载Git安装程序&lt;/h3&gt;
 &lt;p&gt;Git官网下载，网站地址：&lt;a href="https://git-scm.com/downloads"&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
