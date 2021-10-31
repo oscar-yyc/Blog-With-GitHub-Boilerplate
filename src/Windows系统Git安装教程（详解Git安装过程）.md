@@ -4,7 +4,7 @@ title: Windows系统Git安装
 slug: Git_install
 date: 2021/4/16 11:30:00
 status: publish
-author: xiaowangwang
+author: 向日葵旺
 categories: 
   - 编程开发
   - 软件安装
