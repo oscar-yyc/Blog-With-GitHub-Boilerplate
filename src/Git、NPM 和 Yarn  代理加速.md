@@ -16,6 +16,12 @@ tags:
   - proxy
 ---
 
+## 查看端口
+
+此处以比较常用的 v2raryN 为例
+
+![](https://gallery.dachunwang.top/img/20211031144325.png)
+
 ## 配置Git代理
 
 Git 同时支持 `http` 代理和 `socks5` 代理，二选一即可
@@ -29,7 +35,7 @@ $ git config --global http.proxy socks5://127.0.0.1:10808
 $ git config --global https.proxy socks5://127.0.0.1:10808
 ```
 
-以 CFW 代理工具为例：
+以 v2raryN 代理工具为例：
 
 ```
 # http代理
@@ -57,7 +63,7 @@ $ npm config set proxy http://server:port
 $ npm config set https-proxy http://server:port
 ```
 
-以 CFW 代理工具为例：
+以 v2raryN 代理工具为例：
 
 ```
 $ npm config set proxy http://127.0.0.1:10809
@@ -81,7 +87,7 @@ $ yarn config set proxy http://server:port
 $ yarn confit set https-proxy http://server:port
 ```
 
-以 CFW 代理工具为例：
+以 v2raryN 代理工具为例：
 
 ```
 $ yarn config set proxy http://127.0.0.1:10809
