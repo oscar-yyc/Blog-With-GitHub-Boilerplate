@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 09 Nov 2021 02:42:21 +0806</lastBuildDate><pubDate>Tue, 09 Nov 2021 02:42:21 +0806</pubDate><item><title>电脑常见问题</title><link>/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>昳兮wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>昳兮wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 09 Nov 2021 07:49:55 +0806</lastBuildDate><pubDate>Tue, 09 Nov 2021 07:49:55 +0806</pubDate><item><title>电脑常见问题</title><link>/archives/computer_question/</link><description>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
 &lt;p&gt;1、在运行对话框中输入： &lt;code&gt;msconfig&lt;/code&gt;，点击确定或者回车，打开系统配置窗口；&lt;/p&gt;
 &lt;p&gt;2、在系统配置窗口中，点击【引导】，在引导标签下，点击不需要的开机启动项，如 Windows 7，再点击：删除；&lt;/p&gt;
 &lt;p&gt;3、如果还有需要删除的开机启动项，则继续点击，如 Windows 8.1，再点击：删除；&lt;/p&gt;
@@ -11,6 +11,7 @@
 
 &lt;pre&gt;&lt;code&gt;wmic path softwarelicensingservice get OA3xOriginalProductKey&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;电脑图标变白&lt;/h2&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="926" data-height="539" src="https://gallery.dachunwang.top/img/20211109154737.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1、随便打开一个文件夹，选择上方的 " 查看 "，再勾选 " 隐藏的项目 " ;&lt;/p&gt;
 &lt;p&gt;2、同时按下 " WIN + R" ，在打开的运行窗口输入&lt;/p&gt;
 
