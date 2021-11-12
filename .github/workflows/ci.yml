@@ -92,7 +92,7 @@ jobs:
         # 格式为：e.coding.net/组织名/项目名/仓库名.git
         coding_ref: ${{ secrets.coding_REF }}
       run: |
-        cd ./Maverick/dist
+        cd ./dist
         git config --local user.email "iloveyichen"
         git config --local user.name "oscar-yyc"
         git config core.filemode false
