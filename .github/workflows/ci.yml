@@ -98,4 +98,4 @@ jobs:
         git remote set-url origin https://${coding_ref}
         git add .
         git commit -m "$message"
-        git push --force --quiet "https://${coding_username}:${coding_token}@${coding_ref}" gh-pages:master
+        git push --force --quiet "https://${coding_username}:${coding_token}@${coding_ref}" source:master
