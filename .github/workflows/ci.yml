@@ -79,7 +79,6 @@ jobs:
         envId: ${{ secrets.ENV_ID }}
         staticSrcPath: dist
         
-    - uses: actions/checkout@v2
     - name: 设置提交者的个人信息
       # 这三个变量的值都放在 https://github.com/oscar-yyc/HexoSource/settings/secrets
       env:
