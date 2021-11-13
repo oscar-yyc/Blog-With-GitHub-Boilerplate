@@ -76,7 +76,7 @@ nav = [
 head_addon = r'''
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-<link rel="icon" type="image/x-icon" href="${static_prefix}favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="https://wiki.dachunwang.top/favicon.ico"/>
 '''
 
 footer_addon = '蒙ICP备20002555号-1'
