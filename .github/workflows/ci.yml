@@ -86,17 +86,17 @@ jobs:
         git push --force --quiet "https://${coding_username}:${coding_token}@${coding_ref}" master:master
         cd ..
         
-#    - name: Deploy static to Tencent CloudBase
-#      id: deployStatic
-#      uses: TencentCloudBase/cloudbase-action@v1.1.0
-#      env:
-#        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
-#        PUBLISH_BRANCH: master
-#        PUBLISH_DIR: ./dist
-#      with:
-#        secretId: ${{ secrets.SECRET_ID }}
-#        secretKey: ${{ secrets.SECRET_KEY }}
-#        envId: ${{ secrets.ENV_ID }}
-#        staticSrcPath: dist
+    - name: Deploy static to Tencent CloudBase
+      id: deployStatic
+      uses: TencentCloudBase/cloudbase-action@v1.1.0
+      env:
+        PERSONAL_TOKEN: ${{ secrets.PERSONAL_TOKEN }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./dist
+      with:
+        secretId: ${{ secrets.SECRET_ID }}
+        secretKey: ${{ secrets.SECRET_KEY }}
+        envId: ${{ secrets.ENV_ID }}
+        staticSrcPath: dist
         
     
