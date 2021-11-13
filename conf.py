@@ -21,27 +21,27 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "昳兮wiki"
+site_name = "Oscar's wiki"
 site_logo = "${static_prefix}android-chrome-512x512.png"
 site_build_date = "2019-12-18T16:51+08:00"
 author = "向日葵旺"
 email = "iloveyichen@aliyun.com"
-author_homepage = "https://yixi.world"
+author_homepage = "https://dachunwang.top"
 description = "Coding Changes the World"
-key_words = ['Maverick', '昳兮wiki', 'Kepler', 'blog']
+key_words = ['Maverick', 'wiki', 'Kepler', 'blog']
 language = 'zh-CN'
-external_links = [
-    {
-        "name": "Blog",
-        "url": "https://yixi.world",
-        "brief": "My blog."
-    },
-    {
-        "name": "Navigation",
-        "url": "https://nav.yixi.world",
-        "brief": "My navigation network."
-    }
-]
+#external_links = [
+#    {
+#        "name": "Blog",
+#        "url": "https://yixi.world",
+#        "brief": "My blog."
+#    },
+#    {
+#        "name": "Navigation",
+#        "url": "https://nav.yixi.world",
+#        "brief": "My navigation network."
+#    }
+#]
 nav = [
     {
         "name": "Home",
@@ -79,6 +79,6 @@ head_addon = r'''
 <link rel="icon" type="image/x-icon" href="${static_prefix}favicon.ico"/>
 '''
 
-footer_addon = '蒙ICP备20002555号-2'
+footer_addon = '蒙ICP备20002555号-1'
 
 body_addon = ''
