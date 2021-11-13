@@ -65,6 +65,26 @@ jobs:
         PUBLISH_DIR: ./build_cache
       with:
         emptyCommits: false
+      
+    - name: 设置提交者的个人信息
+      # 这三个变量的值都放在 https://github.com/oscar-yyc/HexoSource/settings/secrets
+      env:
+        # 设置时区
+        TZ: Asia/Shanghai
+        # 在 https://mingwolf.coding.net/user/account/setting/tokens 新建秘钥
+        coding_token: ${{ secrets.coding_token }}
+        # 团队中的某个人的用户名，一般默认是本人手机号码
+        coding_username: ${{ secrets.coding_USERNAME }}
+        # 格式为：e.coding.net/组织名/项目名/仓库名.git
+        coding_ref: ${{ secrets.coding_REF }}
+      run: |
+        cd ./dist && git init && git add .
+        git config user.name "oscar-yyc"
+        git config user.email "iloveyichen@aliyun.com"
+        git add .
+        git commit -m "GitHub Actions Auto Builder at $(date +'%Y-%m-%d %H:%M:%S')"
+        git push --force --quiet "https://${coding_username}:${coding_token}@${coding_ref}" master:master
+        cd ..
         
     - name: Deploy static to Tencent CloudBase
       id: deployStatic
@@ -79,23 +99,4 @@ jobs:
         envId: ${{ secrets.ENV_ID }}
         staticSrcPath: dist
         
-    - name: 设置提交者的个人信息
-      # 这三个变量的值都放在 https://github.com/oscar-yyc/HexoSource/settings/secrets
-      env:
-        # 设置时区
-        TZ: Asia/Shanghai
-        # 在 https://mingwolf.coding.net/user/account/setting/tokens 新建秘钥
-        coding_token: ${{ secrets.coding_token }}
-        # 团队中的某个人的用户名，一般默认是本人手机号码
-        coding_username: ${{ secrets.coding_USERNAME }}
-        # 格式为：e.coding.net/组织名/项目名/仓库名.git
-        coding_ref: ${{ secrets.coding_REF }}
-      run: |
-        cd ./dist
-        git config --local user.email "iloveyichen"
-        git config --local user.name "oscar-yyc"
-        git config core.filemode false
-        git remote set-url origin https://${coding_ref}
-        git add .
-        git commit -m "$message"
-        git push --force --quiet "https://${coding_username}:${coding_token}@${coding_ref}" source:master
+    
