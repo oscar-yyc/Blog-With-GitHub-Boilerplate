@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="keywords" content="Maverick,wiki,Kepler,blog" />
+    <meta name="generator" content="Maverick 1.1" />
+    <meta name="template" content="Galileo" />
+    <link rel="alternate" type="application/rss+xml" title="Oscar's wiki &raquo; RSS 2.0" href="/feed/index.xml" />
+    <link rel="alternate" type="application/atom+xml" title="Oscar's wiki &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
+    <link rel="stylesheet" href="/assets/galileo-8d8763e752.css">
+    <link rel="stylesheet" href="/assets/ExSearch/ExSearch-182e5a8868.css">
+    <link rel="stylesheet" href="/assets/katex.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <script>
+        var ExSearchConfig = {
+            root: "",
+            api: "/0c82e30172532782b93f30480a53c5a4.json"
+        }
+    </script>
+    
+<title>MySQL 8.0.18安装教程(windows 64位) - Oscar's wiki</title>
+<meta name="author" content="oscar" />
+<meta name="description" content="下载MySQL安装文件" />
+<meta property="og:title" content="MySQL 8.0.18安装教程(windows 64位) - Oscar's wiki" />
+<meta property="og:description" content="下载MySQL安装文件" />
+<meta property="og:site_name" content="Oscar's wiki" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/MySQL_install/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2020-02-10T16:30:00-00.00" />
+<meta name="twitter:title" content="MySQL 8.0.18安装教程(windows 64位) - Oscar's wiki" />
+<meta name="twitter:description" content="下载MySQL安装文件" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="" />
+
+
+    
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
+<link rel="icon" type="image/x-icon" href="https://wiki.dachunwang.top/favicon.ico"/>
+
+    </head>
+    
+    <body>
+        
+        <div class="container">
+            <header id="ga-header">
+                <div first>
+                    <aside id="ga-brand">
+                        <h1 class="brand"><a class="no-style" href="/">Oscar's wiki</a></h1>
+                        <p>Coding Changes the World</p>
+                    </aside>
+                </div>
+                <div second id="ga-nav">
+                    <nav class="navs">
+                        <ul><li><a class="ga-highlight" href="/" target="_self">Home</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">Archives</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="wrapper">
+                
+<main>    
+    <section class="ga-section ga-content">
+        <article class="yue">
+            <h1 class="ga-post_title">MySQL 8.0.18安装教程(windows 64位)</h1>
+            <span class="ga-post_meta ga-mono">
+                <span>oscar</span>
+                <time>
+                    2020-02-10
+                </time>
+                
+                in <a no-style class="category" href="/category/软件安装/">
+                    软件安装
+                </a>
+                
+                
+            </span>
+            <div class="ga-content_body">
+                <h2>下载MySQL安装文件</h2>
+<p>MySQL下载网址：<a href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a></p>
+<p>已经下载好的压缩包：
+<a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w">百度云提取码：dcwb</a></p>
+<p><a href="https://share.weiyun.com/7imJMKW7">微云</a></p>
+<p>页面呈现的是MySQL的最新版本，下载8.0.18版本还需要点击<code>Archives</code></p>
+<p><figure style="flex: 75.26254375729289" ><img loading="lazy" width="1290" height="857" src="https://gallery.dachunwang.top/img/14a2fx.png" /><figcaption> </figcaption></figure></p>
+<p>版本选择<code>8.08.8</code>，系统选择<code>Windows</code>，下载<code>Windows (x86, 64-bit), ZIP Archive</code></p>
+<p><figure style="flex: 105.11811023622047" ><img loading="lazy" width="1602" height="762" src="https://gallery.dachunwang.top/img/14wkad.png" /><figcaption> </figcaption></figure></p>
+<p>下载完成以后，首先到C盘根目录创建一个MySQL文件夹</p>
+<p><figure style="flex: 109.20398009950249" ><img loading="lazy" width="878" height="402" src="https://gallery.dachunwang.top/img/14O4vq.png" /><figcaption> </figcaption></figure></p>
+<p>将下载好的压缩包解压到刚刚创建的目录，解压好以后是这样</p>
+<p><figure style="flex: 98.22888283378747" ><img loading="lazy" width="721" height="367" src="https://gallery.dachunwang.top/img/14XCVO.png" /><figcaption> </figcaption></figure></p>
+<h2>创建配置文件</h2>
+<p>创建一个文本文件my.ini（新建文本文件，将文件类型改为的.ini）</p>
+<p><figure style="flex: 96.10849056603773" ><img loading="lazy" width="815" height="424" src="https://gallery.dachunwang.top/img/14Xts0.png" /><figcaption> </figcaption></figure></p>
+<p>双击打开这个文件，将下面的文本复制进去并保存</p>
+
+<pre><code>[mysqld]
+# 设置3306端口
+port=3306
+# 设置mysql的安装目录
+basedir=C:\\MySQL\\mysql-8.0.18-winx64 
+# 设置mysql数据库的数据的存放目录
+datadir=C:\\MySQL\\mysql-8.0.18-winx64\\data
+# 允许最大连接数
+max_connections=200
+# 允许连接失败的次数。这是为了防止有人从该主机试图攻击数据库系统
+max_connect_errors=10
+# 服务端使用的字符集默认为utf8mb4
+character-set-server=utf8mb4
+# 创建新表时将使用的默认存储引擎
+default-storage-engine=INNODB
+# 默认使用“mysql_native_password”插件认证
+default_authentication_plugin=mysql_native_password
+[mysql]
+# 设置mysql客户端默认字符集
+default-character-set=utf8mb4
+[client]
+# 设置mysql客户端连接服务端时默认使用的端口
+port=3306
+default-character-set=utf8mb4</code></pre>
+<p><figure style="flex: 84.49131513647643" ><img loading="lazy" width="1362" height="806" src="https://gallery.dachunwang.top/img/14XLef.png" /><figcaption> </figcaption></figure></p>
+<h2>配置环境变量</h2>
+<p>也可以右击<code>我的电脑</code>，选择<code>属性</code>点击<code>高级系统设置</code>——选择<code>环境变量</code>——单击<code>系统变量</code>上的<code>Path</code>接着点击<code>编辑</code>点击<code>编辑文本</code>，点击<code>确定</code></p>
+<p><figure style="flex: 92.3076923076923" ><img loading="lazy" width="1920" height="1040" src="https://gallery.dachunwang.top/img/1jM9Yj.png" /><figcaption> </figcaption></figure></p>
+<p>在<code>变量值</code>最后面输入</p>
+
+<pre><code>;C:\MySQL\mysql-8.0.18-winx64\bin</code></pre>
+<blockquote><p>;后面的是你MySQl的bin路径</p>
+</blockquote>
+<p>然后点击<strong>确定</strong>即可。</p>
+<p><figure style="flex: 178.4153005464481" ><img loading="lazy" width="653" height="183" src="https://gallery.dachunwang.top/img/1jMFlq.png" /><figcaption> </figcaption></figure></p>
+<h2>初始化MySQL</h2>
+<blockquote><p>在安装时，避免出错我们尽量全部使用管理员身份运行cmd，否则在安装时会报错，会导致安装&gt; &gt; 失败的情况。一定要使用管理员身份运行cmd，否则会出错!!!</p>
+</blockquote>
+<p>在搜索栏输入<code>cmd</code>选择<code>以管理员身份运行</code>即可</p>
+<p><figure style="flex: 57.5" ><img loading="lazy" width="782" height="680" src="https://gallery.dachunwang.top/img/Snipaste_2020-07-04_21-55-33.png" /><figcaption> </figcaption></figure></p>
+<p>也可以在<code>C:\Windows\System32</code>中，右击<code>以管理员身份打开</code>。</p>
+<p><figure style="flex: 70.73770491803279" ><img loading="lazy" width="863" height="610" src="https://gallery.dachunwang.top/img/14vZHf.png" /><figcaption> </figcaption></figure></p>
+<p>在安装前应该查看端口3306是否被占用。</p>
+<p>在cmd端输入：</p>
+
+<pre><code>netstat -ano</code></pre>
+<p><figure style="flex: 100.0" ><img loading="lazy" width="960" height="480" src="https://gallery.dachunwang.top/img/14vGD0.png" /><figcaption> </figcaption></figure></p>
+<p>接下来输入：</p>
+
+<pre><code>cd C:\MySQL\mysql-8.0.18-winx64\bin</code></pre>
+<blockquote><p>cd 后面是bin文件存放位置,也就是打开后进入mysql的bin目录</p>
+</blockquote>
+<p><figure style="flex: 169.48529411764707" ><img loading="lazy" width="461" height="136" src="https://gallery.dachunwang.top/img/14xBFS.png" /><figcaption> </figcaption></figure></p>
+<p>继续输入</p>
+
+<pre><code>mysqld --initialize --console</code></pre>
+<p><figure style="flex: 161.98979591836735" ><img loading="lazy" width="635" height="196" src="https://gallery.dachunwang.top/img/14zlmq.png" /><figcaption> </figcaption></figure></p>
+<blockquote><p>注意！root @ localhost：后面的<strong>?vo!se;t&lt;2=Y</strong>就是初始密码（不含首位空格）。在没有更改密码前，需要记住这个密码，后续登录需要用到。复制密码先保存起来!!!</p>
+</blockquote>
+<h2>安装MySQL服务 + 启动MySQL 服务</h2>
+<p>安装mysql服务执行下面的命令：</p>
+
+<pre><code>mysqld --install [服务名]</code></pre>
+<blockquote><p>（服务名可以不加，不加默认为mysql）</p>
+<p>出现Service successfully installed.代表成功了
+<figure style="flex: 396.2962962962963" ><img loading="lazy" width="428" height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" /><figcaption> </figcaption></figure></p>
+<p>如果出现了
+The service already exists!
+The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
+<figure style="flex: 455.88235294117646" ><img loading="lazy" width="620" height="68" src="https://gallery.dachunwang.top/img/15pGz4.png" /><figcaption> </figcaption></figure></p>
+</blockquote>
+<p>这是由于之前已经安装过mysql并且没有删除干净</p>
+<p>输入下面命令删除该mysql即可</p>
+
+<pre><code>sc delete mysql</code></pre>
+<p><figure style="flex: 399.0" ><img loading="lazy" width="399" height="50" src="https://gallery.dachunwang.top/img/159PX9.png" /><figcaption> </figcaption></figure></p>
+<p>删除以后再执行上面的安装命令</p>
+<p><figure style="flex: 396.2962962962963" ><img loading="lazy" width="428" height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" /><figcaption> </figcaption></figure></p>
+<p>服务安装成功之后通过下面命令启动MySQL的服务</p>
+
+<pre><code>net start mysql</code></pre>
+<p><figure style="flex: 269.5945945945946" ><img loading="lazy" width="399" height="74" src="https://gallery.dachunwang.top/img/159sA0.png" /><figcaption> </figcaption></figure></p>
+<h2>连接MySQL + 修改密码</h2>
+<p>首先访问网址：<a href="https://www.navicat.com.cn/download/navicat-premium">https://www.navicat.com.cn/download/navicat-premium</a></p>
+<p>下载安装一个Navicat Premium</p>
+<p><figure style="flex: 79.43589743589743" ><img loading="lazy" width="1549" height="975" src="https://gallery.dachunwang.top/img/15iN9K.png" /><figcaption> </figcaption></figure></p>
+<p>安装完成后打开软件，点击<code>文件</code>——<code>新建连接</code>——<code>MySQL</code></p>
+<p><figure style="flex: 70.47038327526133" ><img loading="lazy" width="809" height="574" src="https://gallery.dachunwang.top/img/15FzQS.png" /><figcaption> </figcaption></figure></p>
+<p>将刚刚复制保存下来的root @ localhost：后面的初始密码复制粘贴到密码</p>
+<p>点击<code>测试连接</code></p>
+<p><figure style="flex: 42.12893553223388" ><img loading="lazy" width="562" height="667" src="https://gallery.dachunwang.top/img/15kX79.png" /><figcaption> </figcaption></figure>
+<figure style="flex: 42.12893553223388" ><img loading="lazy" width="562" height="667" src="https://gallery.dachunwang.top/img/15kO0J.png" /><figcaption> </figcaption></figure></p>
+<h2>修改密码</h2>
+<p>使用cmd下输入下面命令进行数据库连接</p>
+<div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
+</pre></div>
+<p>接着在<code>Enter password</code>后面输入你的初始密码</p>
+<blockquote><p>（注意是输入进去，无法粘贴）</p>
+</blockquote>
+<p><figure style="flex: 266.30434782608694" ><img loading="lazy" width="490" height="92" src="https://gallery.dachunwang.top/img/15EjRx.png" /><figcaption> </figcaption></figure></p>
+<p>出现 <code>mysql&gt;</code> 这个的时候  你就可以输入下面命令进行修改密码了</p>
+<div class="highlight"><pre><span></span><span class="k">ALTER</span> <span class="k">USER</span> <span class="s1">&#39;root&#39;</span><span class="nv">@&#39;localhost&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;新密码&#39;</span><span class="p">;</span>
+</pre></div>
+<p><figure style="flex: 762.5" ><img loading="lazy" width="488" height="32" src="https://gallery.dachunwang.top/img/15VJS0.png" /><figcaption> </figcaption></figure></p>
+<p>修改完密码以后输入下面命令就可以退出mysql了</p>
+<div class="highlight"><pre><span></span><span class="k">exit</span><span class="p">;</span>
+</pre></div>
+<p><figure style="flex: 142.70833333333334" ><img loading="lazy" width="137" height="48" src="https://gallery.dachunwang.top/img/15Vrf1.png" /><figcaption> </figcaption></figure></p>
+
+            </div>
+        </article>
+        <div id="ga-tags">
+    
+    <span class="ga-tag">
+        <a class="ga-highlight" href="/tag/MySQL/">#MySQL</a>
+    </span>
+    
+</div>
+    </section>
+
+    
+<section id="ga-content_pager">
+
+    <div class="next">
+        <a class="ga-highlight" href="/archives/computer_question/">电脑常见问题</a>
+        <p class="yue">删除win10多余开机引导</p>
+    </div>
+
+
+    <div class="prev">
+        <h3>没有了</h3>
+        <p class="yue">这是最旧的文章</p>
+    </div>
+
+</section>
+
+
+    
+
+</main>
+
+                <footer class="ga-mono" id="ga-footer">
+                    <section>
+                        <span id="ga-uptime"></span>
+                        <span class="brand">Oscar's wiki</span>
+                    </section>
+                    <section>
+                        <p class="copyright">
+                            <span>Copyright © 2021 Oscar</span>
+                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
+                        </p>
+                        <div class="copyright">
+                            <span class="footer-addon">
+                                蒙ICP备20002555号-1
+                            </span>
+                            <nav class="social-links">
+                                <ul></ul>
+                            </nav>
+                        </div>
+                    </section>
+                    <script>
+                        var site_build_date = "2019-12-18T16:51+08:00"
+                    </script>
+                    <script src="/assets/galileo-7c8cea54ab.js"></script>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+    <!--katex-->
+    <script defer src="/assets/katex.min.js"></script>
+    <script>
+    mathOpts = {
+        delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "\\[", right: "\\]", display: true},
+            {left: "$", right: "$", display: false},
+            {left: "\\(", right: "\\)", display: false}
+        ]
+    };
+    </script>
+    <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
+
+    <script src="/assets/ExSearch/jquery.min.js"></script>
+    <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+
+    
+    </body>
+</html>
