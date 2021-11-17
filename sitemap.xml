@@ -19,13 +19,6 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 </url>
 
 <url>
-    <loc>/archives/NavicatPremium_crack/</loc>
-    <lastmod>2021-02-16</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-</url>
-
-<url>
     <loc>/archives/wiring/</loc>
     <lastmod>2021-01-21</lastmod>
     <changefreq>always</changefreq>
@@ -35,6 +28,13 @@ xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
     <loc>/archives/computer_question/</loc>
     <lastmod>2021-01-13</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+</url>
+
+<url>
+    <loc>/archives/NavicatPremium_crack/</loc>
+    <lastmod>2020-03-12</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
 </url>
