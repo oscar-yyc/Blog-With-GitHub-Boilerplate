@@ -11,7 +11,7 @@ archives_page_size = 20
 template = {
     "name": "Kepler",
     "type": "git",
-    "url": "https://github.com/oscar-yyc/Maverick-Theme-Kepler.git",
+    "url": "https://github.com/AlanDecode/Maverick-Theme-Galileo.git",
     "branch": "latest"
 }
 
@@ -26,7 +26,7 @@ site_logo = "${static_prefix}android-chrome-512x512.png"
 site_build_date = "2019-12-18T16:51+08:00"
 author = "Oscar"
 email = "iloveyichen@aliyun.com"
-author_homepage = "https://dachunwang.top"
+author_homepage = "https://isoscar.cn"
 description = "Coding Changes the World"
 key_words = ['Maverick', 'wiki', 'Kepler', 'blog']
 language = 'zh-CN'
