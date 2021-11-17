@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>Wainic's wiki</title><updated>2021-11-17T13:37:20.421810+08:06</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/android-chrome-512x512.png</logo><subtitle>Coding Changes the World</subtitle><entry><id>/archives/MySQL_install/</id><title>MySQL 8.0.18安装教程(windows 64位)</title><updated>2021-11-17T13:37:20.422035+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-CN"><id>/</id><title>Wainic's wiki</title><updated>2021-11-17T13:39:04.148803+08:06</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email></author><link href="/" rel="alternate"/><generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator><logo>/android-chrome-512x512.png</logo><subtitle>Coding Changes the World</subtitle><entry><id>/archives/MySQL_install/</id><title>MySQL 8.0.18安装教程(windows 64位)</title><updated>2021-11-17T13:39:04.149037+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
 &lt;p&gt;MySQL下载网址：&lt;a href="https://dev.mysql.com/downloads/mysql/"&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;已经下载好的压缩包：
 &lt;a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w"&gt;百度云提取码：dcwb&lt;/a&gt;&lt;/p&gt;
@@ -125,7 +125,7 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;exit&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="137" data-height="48" src="https://gallery.dachunwang.top/img/15Vrf1.png" alt=" " /&gt;&lt;figcaption&gt; &lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
-</content><link href="/archives/MySQL_install/" rel="alternate"/><published>2020-02-10T16:30:00+08:06</published></entry><entry><id>/archives/NavicatPremium_crack/</id><title>Navicat Premium 15 安装与激活</title><updated>2021-11-17T13:37:20.422010+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;下载Navicat安装包与注册机&lt;/h2&gt;
+</content><link href="/archives/MySQL_install/" rel="alternate"/><published>2020-02-10T16:30:00+08:06</published></entry><entry><id>/archives/NavicatPremium_crack/</id><title>Navicat Premium 15 安装与激活</title><updated>2021-11-17T13:39:04.149012+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;下载Navicat安装包与注册机&lt;/h2&gt;
 &lt;p&gt;&lt;a href="https:\\pan.baidu.com\s\1fWGwFnaQU83yYPrMJ9Fbuw"&gt;百度云提取码：dcwb&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href="https:\\dachunwang.lanzoux.com\io8Xuo12kah"&gt;蓝奏云&lt;/a&gt;&lt;/p&gt;
 &lt;h2&gt;安装Navicat&lt;/h2&gt;
@@ -187,7 +187,7 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 激活成功以后不要将软件进行升级，否则破解会失效！！！
 激活成功以后不要将软件进行升级，否则破解会失效！！！&lt;/p&gt;
 &lt;/blockquote&gt;
-</content><link href="/archives/NavicatPremium_crack/" rel="alternate"/><published>2020-03-12T11:30:00+08:06</published></entry><entry><id>/archives/computer_question/</id><title>电脑常见问题</title><updated>2021-11-17T13:37:20.421985+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
+</content><link href="/archives/NavicatPremium_crack/" rel="alternate"/><published>2020-03-12T11:30:00+08:06</published></entry><entry><id>/archives/computer_question/</id><title>电脑常见问题</title><updated>2021-11-17T13:39:04.148985+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;删除win10多余开机引导&lt;/h2&gt;
 &lt;p&gt;1、在运行对话框中输入： &lt;code&gt;msconfig&lt;/code&gt;，点击确定或者回车，打开系统配置窗口；&lt;/p&gt;
 &lt;p&gt;2、在系统配置窗口中，点击【引导】，在引导标签下，点击不需要的开机启动项，如 Windows 7，再点击：删除；&lt;/p&gt;
 &lt;p&gt;3、如果还有需要删除的开机启动项，则继续点击，如 Windows 8.1，再点击：删除；&lt;/p&gt;
@@ -199,7 +199,6 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 
 &lt;pre&gt;&lt;code&gt;wmic path softwarelicensingservice get OA3xOriginalProductKey&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;电脑图标变白&lt;/h2&gt;
-&lt;p&gt;&lt;figure&gt;&lt;img data-width="926" data-height="539" src="https://gallery.dachunwang.top/img/20211109154737.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;1、随便打开一个文件夹，选择上方的 " 查看 "，再勾选 " 隐藏的项目 " ;&lt;/p&gt;
 &lt;p&gt;2、同时按下 " WIN + R" ，在打开的运行窗口输入&lt;/p&gt;
 
@@ -207,12 +206,12 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 &lt;p&gt;3、在打开的文件夹中找到 " lconcache.db " ，将其删除 ;&lt;/p&gt;
 &lt;p&gt;4、在任务栏上右击，选择 " 任务管理器 " ;&lt;/p&gt;
 &lt;p&gt;5、右击 "Windows资源管理器 " ,选择 " 重新启动 " 即可重建图标缓存。&lt;/p&gt;
-</content><link href="/archives/computer_question/" rel="alternate"/><published>2021-01-13T19:30:00+08:06</published></entry><entry><id>/archives/wiring/</id><title>网线水晶头接法</title><updated>2021-11-17T13:37:20.421959+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
+</content><link href="/archives/computer_question/" rel="alternate"/><published>2021-01-13T19:30:00+08:06</published></entry><entry><id>/archives/wiring/</id><title>网线水晶头接法</title><updated>2021-11-17T13:39:04.148958+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="610" src="https://gallery.dachunwang.top/img/20210121110106.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;网线水晶头的排布标准&lt;/h2&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="591" src="https://gallery.dachunwang.top/img/20210121110155.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="609" src="https://gallery.dachunwang.top/img/20210121110231.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
-</content><link href="/archives/wiring/" rel="alternate"/><published>2021-01-21T11:10:00+08:06</published></entry><entry><id>/archives/Git_proxy/</id><title>Git、NPM 和 Yarn  代理加速</title><updated>2021-11-17T13:37:20.421930+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;查看端口&lt;/h2&gt;
+</content><link href="/archives/wiring/" rel="alternate"/><published>2021-01-21T11:10:00+08:06</published></entry><entry><id>/archives/Git_proxy/</id><title>Git、NPM 和 Yarn  代理加速</title><updated>2021-11-17T13:39:04.148927+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;查看端口&lt;/h2&gt;
 &lt;p&gt;此处以比较常用的 v2raryN 为例&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="954" data-height="625" src="https://gallery.dachunwang.top/img/20211031144325.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;配置Git代理&lt;/h2&gt;
@@ -264,7 +263,7 @@ $ yarn confit set https-proxy http://127.0.0.1:10809&lt;/code&gt;&lt;/pre&gt;
 
 &lt;pre&gt;&lt;code&gt;$ yarn config delete proxy
 $ yarn config delete https-proxy&lt;/code&gt;&lt;/pre&gt;
-</content><link href="/archives/Git_proxy/" rel="alternate"/><published>2021-02-16T11:30:00+08:06</published></entry><entry><id>/archives/Git_install/</id><title>Windows系统Git安装</title><updated>2021-11-17T13:37:20.421878+00:00</updated><author><name>oscar</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
+</content><link href="/archives/Git_proxy/" rel="alternate"/><published>2021-02-16T11:30:00+08:06</published></entry><entry><id>/archives/Git_install/</id><title>Windows系统Git安装</title><updated>2021-11-17T13:39:04.148871+00:00</updated><author><name>Wainic</name><email>iloveyichen@aliyun.com</email><uri>https://wainic.com</uri></author><content>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
 &lt;h3&gt;下载Git安装程序&lt;/h3&gt;
 &lt;p&gt;Git官网下载，网站地址：&lt;a href="https://git-scm.com/downloads"&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
