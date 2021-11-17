@@ -11,7 +11,7 @@ archives_page_size = 20
 template = {
     "name": "Kepler",
     "type": "git",
-    "url": "https://github.com/AlanDecode/Maverick-Theme-Galileo.git",
+    "url": "https://github.com/AlanDecode/Maverick-Theme-Kepler.git",
     "branch": "latest"
 }
 
@@ -76,9 +76,9 @@ nav = [
 head_addon = r'''
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-<link rel="icon" type="image/x-icon" href="https://wiki.dachunwang.top/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="https://gallery.dachunwang.top/img/20211117104259.vnd.microsoft.icon"/>
 '''
 
-footer_addon = '蒙ICP备20002555号-1'
+footer_addon = ''
 
 body_addon = ''
