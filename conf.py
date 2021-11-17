@@ -21,12 +21,12 @@ enable_jsdelivr = {
 }
 
 # 站点设置
-site_name = "Oscar's wiki"
+site_name = "Wainic's wiki"
 site_logo = "${static_prefix}android-chrome-512x512.png"
 site_build_date = "2019-12-18T16:51+08:00"
-author = "Oscar"
+author = "Wainic"
 email = "iloveyichen@aliyun.com"
-author_homepage = "https://isoscar.cn"
+author_homepage = "https://wainic.com"
 description = "Coding Changes the World"
 key_words = ['Maverick', 'wiki', 'Kepler', 'blog']
 language = 'zh-CN'
