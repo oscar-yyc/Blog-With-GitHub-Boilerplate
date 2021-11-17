@@ -4,7 +4,7 @@ title: MySQL 8.0.18安装教程(windows 64位)
 slug: MySQL_install
 date: 2020/2/10 16:30:00
 status: publish
-author: oscar
+author: Wainic
 categories: 
   - 编程开发
   - 软件安装

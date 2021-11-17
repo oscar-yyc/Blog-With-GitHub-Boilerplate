@@ -4,7 +4,7 @@ title: Git、NPM 和 Yarn  代理加速
 slug: Git_proxy
 date: 2021/2/16 11:30:00
 status: publish
-author: oscar
+author: Wainic
 categories: 
   - 编程开发
   - 环境配置

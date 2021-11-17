@@ -4,7 +4,7 @@ title: Navicat Premium 15 安装与激活
 slug: NavicatPremium_crack
 date: 2020/3/12 11:30:00
 status: publish
-author: oscar
+author: Wainic
 categories: 
   - 编程开发
   - 软件安装
