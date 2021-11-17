@@ -8,19 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Maverick,wiki,Kepler,blog" />
     <meta name="generator" content="Maverick 1.1" />
-    <meta name="template" content="Galileo" />
+    <meta name="template" content="Kepler" />
     <link rel="alternate" type="application/rss+xml" title="Oscar's wiki &raquo; RSS 2.0" href="/feed/index.xml" />
     <link rel="alternate" type="application/atom+xml" title="Oscar's wiki &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
-    <link rel="stylesheet" href="/assets/galileo-8d8763e752.css">
+    <link rel="stylesheet" href="/assets/kepler-426969802d.css">
     <link rel="stylesheet" href="/assets/ExSearch/ExSearch-182e5a8868.css">
-    <link rel="stylesheet" href="/assets/katex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
     <script>
         var ExSearchConfig = {
             root: "",
             api: "/cf4129848b2875c1e4009b1f9c7b5adc.json"
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            if(/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)){
+                document.body.classList.add('safari')
+            }else{
+                document.body.classList.remove('safari')
+            }
+        });
     </script>
     
 <title>Windows系统Git安装 - Oscar's wiki</title>
@@ -42,160 +51,189 @@
     
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-<link rel="icon" type="image/x-icon" href="https://wiki.dachunwang.top/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="https://gallery.dachunwang.top/img/20211117104259.vnd.microsoft.icon"/>
 
     </head>
     
-    <body>
-        
-        <div class="container">
-            <header id="ga-header">
-                <div first>
-                    <aside id="ga-brand">
-                        <h1 class="brand"><a class="no-style" href="/">Oscar's wiki</a></h1>
-                        <p>Coding Changes the World</p>
-                    </aside>
-                </div>
-                <div second id="ga-nav">
-                    <nav class="navs">
-                        <ul><li><a class="ga-highlight" href="/" target="_self">Home</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">Archives</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+    <body class="content">
+        <header>
+            <div class="container">
+                <section>
+                    <a href="/"><img src="/android-chrome-512x512.png">Oscar's wiki</a>
+                </section>
+                <section>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
                     </nav>
-                </div>
-            </header>
-            <div class="wrapper">
+                </section>
+    
+                <section>
+                    <a hidden class="toggle-toc" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('toc-open')"><i class="fa fa-align-right"></i></a>
+                    <a hidden class="toggle-navbar" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('navbar-open')"><i class="fa fa-indent"></i></a>
+                    <button class="search-form-input"><i class="fa fa-search"></i></button>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <div id="pjax-container" class="container">
+                <aside id="navbar" class="no-scrollbar">
+                    
+                    <section class="sidebar-nav">
+                        
+                            <div class="None" ><span><a href="/">Home</a></span></div>
+                        
+                            <div class="None" ><span><a href="/archives/">Archives</a></span></div>
+                        
+                    </section>
+                    
+                    <section>
+                        
+    <div class="open "><span><a href="/category/编程开发/">编程开发</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/软件安装/">软件安装</a><button class="toggle_sidebar fa"></button></span><ul><li class="current"><a href="/archives/Git_install/">Windows系统Git安装</a></li><li class=""><a href="/archives/NavicatPremium_crack/">Navicat Premium 15 安装与激活</a></li><li class=""><a href="/archives/MySQL_install/">MySQL 8.0.18安装教程(windows 64位)</a></li></ul></div><div class=" "><span><a href="/category/环境配置/">环境配置</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Git_proxy/">Git、NPM 和 Yarn  代理加速</a></li></ul></div></ul></div><div class=" "><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/wiring/">网线水晶头接法</a></li><li class=""><a href="/archives/computer_question/">电脑常见问题</a></li></ul></div>
+
+                    </section>
+                    <section hidden class="sidebar-external-link">
+                        
+                    </section>
+                    <section class="maverick">
+                        <div><span style="border: 1px solid #d4dadf;"><a href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Kepler</a></span></div>
+                    </section>
+                </aside>
+                <div id="content-wrapper">
+                    <div id="content">
+    <section>
+        <h1 class="post-title">Windows系统Git安装</h1>
+        <p class="post-meta">
+            <time>April 16 2021</time>
+            <span class="tags">
                 
-<main>    
-    <section class="ga-section ga-content">
-        <article class="yue">
-            <h1 class="ga-post_title">Windows系统Git安装</h1>
-            <span class="ga-post_meta ga-mono">
-                <span>oscar</span>
-                <time>
-                    2021-04-16
-                </time>
-                
-                in <a no-style class="category" href="/category/软件安装/">
-                    软件安装
-                </a>
-                
+                <span>
+                    <a href="/tag/Git/">#Git</a>
+                </span>
                 
             </span>
-            <div class="ga-content_body">
-                <h2>Windows系统Git安装</h2>
+        </p>
+        <article class="yue"><h2>Windows系统Git安装</h2>
 <h3>下载Git安装程序</h3>
 <p>Git官网下载，网站地址：<a href="https://git-scm.com/downloads">https://git-scm.com/downloads</a></p>
-<p><figure style="flex: 59.74025974025974" ><img loading="lazy" width="1012" height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" /></figure></p>
+<p><figure><img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /></figure></p>
 <h3>安装Git</h3>
 <p>1.双击下载好的安装包</p>
-<p><figure style="flex: 812.7118644067797" ><img loading="lazy" width="959" height="59" src="https://gallery.dachunwang.top/img/20210307142123.png" /></figure></p>
+<p><figure><img data-width="959" data-height="59" src="https://gallery.dachunwang.top/img/20210307142123.png" alt="" /></figure></p>
 <p>2.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142216.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142216.png" alt="" /></figure></p>
 <p>3.更改安装位置，然后点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142358.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142358.png" alt="" /></figure></p>
 <p>4.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142459.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142459.png" alt="" /></figure></p>
 <p>5.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142548.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142548.png" alt="" /></figure></p>
 <p>6.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142617.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142617.png" alt="" /></figure></p>
 <p>7.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142648.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142648.png" alt="" /></figure></p>
 <p>8.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142718.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142718.png" alt="" /></figure></p>
 <p>9.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142746.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142746.png" alt="" /></figure></p>
 <p>10.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142819.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142819.png" alt="" /></figure></p>
 <p>11.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142847.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142847.png" alt="" /></figure></p>
 <p>12.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142920.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142920.png" alt="" /></figure></p>
 <p>13.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307142947.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307142947.png" alt="" /></figure></p>
 <p>14.点击 <code>Next</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307143022.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143022.png" alt="" /></figure></p>
 <p>15.点击 <code>Install</code></p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307143044.png" /></figure></p>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143044.png" alt="" /></figure></p>
 <p>16.安装完成</p>
-<p><figure style="flex: 64.4702842377261" ><img loading="lazy" width="499" height="387" src="https://gallery.dachunwang.top/img/20210307143324.png" /></figure></p>
-
-            </div>
-        </article>
-        <div id="ga-tags">
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/Git/">#Git</a>
-    </span>
-    
-</div>
+<p><figure><img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143324.png" alt="" /></figure></p>
+</article>
     </section>
 
     
-<section id="ga-content_pager">
-
-    <div class="next">
-        <h3>没有了</h3>
-        <p class="yue">这是最新的文章</p>
-    </div>
-
-
-    <div class="prev">
-        <a class="ga-highlight" href="/archives/Git_proxy/">Git、NPM 和 Yarn  代理加速</a>
-        <p class="yue">查看端口</p>
-    </div>
-
-</section>
-
-
-    
-
-</main>
-
-                <footer class="ga-mono" id="ga-footer">
-                    <section>
-                        <span id="ga-uptime"></span>
-                        <span class="brand">Oscar's wiki</span>
-                    </section>
-                    <section>
-                        <p class="copyright">
-                            <span>Copyright © 2021 Oscar</span>
-                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
-                        </p>
-                        <div class="copyright">
-                            <span class="footer-addon">
-                                蒙ICP备20002555号-1
-                            </span>
-                            <nav class="social-links">
-                                <ul></ul>
-                            </nav>
-                        </div>
-                    </section>
-                    <script>
-                        var site_build_date = "2019-12-18T16:51+08:00"
-                    </script>
-                    <script src="/assets/galileo-7c8cea54ab.js"></script>
-                </footer>
+    <section id="content-pager">
+        
+        
+            <div class="prev">
+                <a class="card" href="/archives/Git_proxy/">
+                    <time>February 16 2021</time>
+                    <span>Git、NPM 和 Yarn  代理加速</span>
+                </a>
             </div>
-        </div>
-    </div>
-
-    <!--katex-->
-    <script defer src="/assets/katex.min.js"></script>
-    <script>
-    mathOpts = {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "\\[", right: "\\]", display: true},
-            {left: "$", right: "$", display: false},
-            {left: "\\(", right: "\\)", display: false}
-        ]
-    };
-    </script>
-    <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
-
-    <script src="/assets/ExSearch/jquery.min.js"></script>
-    <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+        
+    </section>
+    
 
     
+
+    <script>
+        document.body.classList.add('content');
+        document.body.classList.remove('archive');
+    </script>
+</div>
+                    <footer>
+                        <span>Copyright © 2021 Oscar</span>
+                        
+    
+
+                        
+                    </footer>
+                </div>
+                
+<aside id="toc-container" class="no-scrollbar">
+    <span><i class="fa fa-align-right"></i> CONTENTS</span>
+    <div id="toc"></div>
+</aside>
+
+            </div>
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+        <script src="/assets/kepler-ef161b04d5.js"></script>
+        <script>
+            function ExSearchCall(item){
+                if (item && item.length) {
+                    $('.ins-close').click(); // 关闭搜索框
+                    $('input.ins-search-input').val(''); // 清空
+                    let url = item.attr('data-url'); // 获取目标页面 URL
+                    $.pjax({url: url, 
+                        container: '#pjax-container',
+                        fragment: '#pjax-container',
+                        timeout: 8000, }); // 发起一次 PJAX 请求
+                }
+            }
+        </script>
+
+        <!--Valine-->
+        
+
+        <!--ExSearch-->
+        <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+        
+        <!--katex-->
+        <link rel="stylesheet" href="/assets/katex.min.css">
+        <script defer src="/assets/katex.min.js"></script>
+        <script>
+        mathOpts = {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        };
+        </script>
+        <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
+
+        
     </body>
 </html>

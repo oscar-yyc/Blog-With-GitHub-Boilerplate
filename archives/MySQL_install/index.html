@@ -8,19 +8,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <meta name="keywords" content="Maverick,wiki,Kepler,blog" />
     <meta name="generator" content="Maverick 1.1" />
-    <meta name="template" content="Galileo" />
+    <meta name="template" content="Kepler" />
     <link rel="alternate" type="application/rss+xml" title="Oscar's wiki &raquo; RSS 2.0" href="/feed/index.xml" />
     <link rel="alternate" type="application/atom+xml" title="Oscar's wiki &raquo; ATOM 1.0" href="/feed/atom/index.xml" />
-    <link rel="stylesheet" href="/assets/galileo-8d8763e752.css">
+    <link rel="stylesheet" href="/assets/kepler-426969802d.css">
     <link rel="stylesheet" href="/assets/ExSearch/ExSearch-182e5a8868.css">
-    <link rel="stylesheet" href="/assets/katex.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Fira+Code&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.css">
     <script>
         var ExSearchConfig = {
             root: "",
             api: "/cf4129848b2875c1e4009b1f9c7b5adc.json"
         }
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function(){
+            if(/Safari/.test(navigator.userAgent) && !/Chrome/.test(navigator.userAgent)){
+                document.body.classList.add('safari')
+            }else{
+                document.body.classList.remove('safari')
+            }
+        });
     </script>
     
 <title>MySQL 8.0.18安装教程(windows 64位) - Oscar's wiki</title>
@@ -42,61 +51,86 @@
     
 <meta http-equiv="x-dns-prefetch-control" content="on">
 <link rel="dns-prefetch" href="//cdn.jsdelivr.net" />
-<link rel="icon" type="image/x-icon" href="https://wiki.dachunwang.top/favicon.ico"/>
+<link rel="icon" type="image/x-icon" href="https://gallery.dachunwang.top/img/20211117104259.vnd.microsoft.icon"/>
 
     </head>
     
-    <body>
-        
-        <div class="container">
-            <header id="ga-header">
-                <div first>
-                    <aside id="ga-brand">
-                        <h1 class="brand"><a class="no-style" href="/">Oscar's wiki</a></h1>
-                        <p>Coding Changes the World</p>
-                    </aside>
-                </div>
-                <div second id="ga-nav">
-                    <nav class="navs">
-                        <ul><li><a class="ga-highlight" href="/" target="_self">Home</a></li><span class="separator">·</span><li><a class="ga-highlight" href="/archives/" target="_self">Archives</a></li><span class="separator">·</span><li><a href="#" target="_self" class="search-form-input ga-highlight">搜索</a></li></ul>
+    <body class="content">
+        <header>
+            <div class="container">
+                <section>
+                    <a href="/"><img src="/android-chrome-512x512.png">Oscar's wiki</a>
+                </section>
+                <section>
+                    <nav>
+                        <ul>
+                            
+                        </ul>
                     </nav>
-                </div>
-            </header>
-            <div class="wrapper">
+                </section>
+    
+                <section>
+                    <a hidden class="toggle-toc" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('toc-open')"><i class="fa fa-align-right"></i></a>
+                    <a hidden class="toggle-navbar" target="_self" href="javascript:void(0)" onclick="$(body).toggleClass('navbar-open')"><i class="fa fa-indent"></i></a>
+                    <button class="search-form-input"><i class="fa fa-search"></i></button>
+                </section>
+            </div>
+        </header>
+
+        <main>
+            <div id="pjax-container" class="container">
+                <aside id="navbar" class="no-scrollbar">
+                    
+                    <section class="sidebar-nav">
+                        
+                            <div class="None" ><span><a href="/">Home</a></span></div>
+                        
+                            <div class="None" ><span><a href="/archives/">Archives</a></span></div>
+                        
+                    </section>
+                    
+                    <section>
+                        
+    <div class="open "><span><a href="/category/编程开发/">编程开发</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/软件安装/">软件安装</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Git_install/">Windows系统Git安装</a></li><li class=""><a href="/archives/NavicatPremium_crack/">Navicat Premium 15 安装与激活</a></li><li class="current"><a href="/archives/MySQL_install/">MySQL 8.0.18安装教程(windows 64位)</a></li></ul></div><div class=" "><span><a href="/category/环境配置/">环境配置</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Git_proxy/">Git、NPM 和 Yarn  代理加速</a></li></ul></div></ul></div><div class=" "><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/wiring/">网线水晶头接法</a></li><li class=""><a href="/archives/computer_question/">电脑常见问题</a></li></ul></div>
+
+                    </section>
+                    <section hidden class="sidebar-external-link">
+                        
+                    </section>
+                    <section class="maverick">
+                        <div><span style="border: 1px solid #d4dadf;"><a href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Kepler</a></span></div>
+                    </section>
+                </aside>
+                <div id="content-wrapper">
+                    <div id="content">
+    <section>
+        <h1 class="post-title">MySQL 8.0.18安装教程(windows 64位)</h1>
+        <p class="post-meta">
+            <time>February 10 2020</time>
+            <span class="tags">
                 
-<main>    
-    <section class="ga-section ga-content">
-        <article class="yue">
-            <h1 class="ga-post_title">MySQL 8.0.18安装教程(windows 64位)</h1>
-            <span class="ga-post_meta ga-mono">
-                <span>oscar</span>
-                <time>
-                    2020-02-10
-                </time>
-                
-                in <a no-style class="category" href="/category/软件安装/">
-                    软件安装
-                </a>
-                
+                <span>
+                    <a href="/tag/MySQL/">#MySQL</a>
+                </span>
                 
             </span>
-            <div class="ga-content_body">
-                <h2>下载MySQL安装文件</h2>
+        </p>
+        <article class="yue"><h2>下载MySQL安装文件</h2>
 <p>MySQL下载网址：<a href="https://dev.mysql.com/downloads/mysql/">https://dev.mysql.com/downloads/mysql/</a></p>
 <p>已经下载好的压缩包：
 <a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w">百度云提取码：dcwb</a></p>
 <p><a href="https://share.weiyun.com/7imJMKW7">微云</a></p>
 <p>页面呈现的是MySQL的最新版本，下载8.0.18版本还需要点击<code>Archives</code></p>
-<p><figure style="flex: 75.26254375729289" ><img loading="lazy" width="1290" height="857" src="https://gallery.dachunwang.top/img/14a2fx.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="1290" data-height="857" src="https://gallery.dachunwang.top/img/14a2fx.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>版本选择<code>8.08.8</code>，系统选择<code>Windows</code>，下载<code>Windows (x86, 64-bit), ZIP Archive</code></p>
-<p><figure style="flex: 105.11811023622047" ><img loading="lazy" width="1602" height="762" src="https://gallery.dachunwang.top/img/14wkad.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="1602" data-height="762" src="https://gallery.dachunwang.top/img/14wkad.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>下载完成以后，首先到C盘根目录创建一个MySQL文件夹</p>
-<p><figure style="flex: 109.20398009950249" ><img loading="lazy" width="878" height="402" src="https://gallery.dachunwang.top/img/14O4vq.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="878" data-height="402" src="https://gallery.dachunwang.top/img/14O4vq.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>将下载好的压缩包解压到刚刚创建的目录，解压好以后是这样</p>
-<p><figure style="flex: 98.22888283378747" ><img loading="lazy" width="721" height="367" src="https://gallery.dachunwang.top/img/14XCVO.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="721" data-height="367" src="https://gallery.dachunwang.top/img/14XCVO.png" alt=" " /><figcaption> </figcaption></figure></p>
 <h2>创建配置文件</h2>
 <p>创建一个文本文件my.ini（新建文本文件，将文件类型改为的.ini）</p>
-<p><figure style="flex: 96.10849056603773" ><img loading="lazy" width="815" height="424" src="https://gallery.dachunwang.top/img/14Xts0.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="815" data-height="424" src="https://gallery.dachunwang.top/img/14Xts0.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>双击打开这个文件，将下面的文本复制进去并保存</p>
 
 <pre><code>[mysqld]
@@ -123,39 +157,39 @@ default-character-set=utf8mb4
 # 设置mysql客户端连接服务端时默认使用的端口
 port=3306
 default-character-set=utf8mb4</code></pre>
-<p><figure style="flex: 84.49131513647643" ><img loading="lazy" width="1362" height="806" src="https://gallery.dachunwang.top/img/14XLef.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="1362" data-height="806" src="https://gallery.dachunwang.top/img/14XLef.png" alt=" " /><figcaption> </figcaption></figure></p>
 <h2>配置环境变量</h2>
 <p>也可以右击<code>我的电脑</code>，选择<code>属性</code>点击<code>高级系统设置</code>——选择<code>环境变量</code>——单击<code>系统变量</code>上的<code>Path</code>接着点击<code>编辑</code>点击<code>编辑文本</code>，点击<code>确定</code></p>
-<p><figure style="flex: 92.3076923076923" ><img loading="lazy" width="1920" height="1040" src="https://gallery.dachunwang.top/img/1jM9Yj.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="1920" data-height="1040" src="https://gallery.dachunwang.top/img/1jM9Yj.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>在<code>变量值</code>最后面输入</p>
 
 <pre><code>;C:\MySQL\mysql-8.0.18-winx64\bin</code></pre>
 <blockquote><p>;后面的是你MySQl的bin路径</p>
 </blockquote>
 <p>然后点击<strong>确定</strong>即可。</p>
-<p><figure style="flex: 178.4153005464481" ><img loading="lazy" width="653" height="183" src="https://gallery.dachunwang.top/img/1jMFlq.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="653" data-height="183" src="https://gallery.dachunwang.top/img/1jMFlq.png" alt=" " /><figcaption> </figcaption></figure></p>
 <h2>初始化MySQL</h2>
 <blockquote><p>在安装时，避免出错我们尽量全部使用管理员身份运行cmd，否则在安装时会报错，会导致安装&gt; &gt; 失败的情况。一定要使用管理员身份运行cmd，否则会出错!!!</p>
 </blockquote>
 <p>在搜索栏输入<code>cmd</code>选择<code>以管理员身份运行</code>即可</p>
-<p><figure style="flex: 57.5" ><img loading="lazy" width="782" height="680" src="https://gallery.dachunwang.top/img/Snipaste_2020-07-04_21-55-33.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="782" data-height="680" src="https://gallery.dachunwang.top/img/Snipaste_2020-07-04_21-55-33.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>也可以在<code>C:\Windows\System32</code>中，右击<code>以管理员身份打开</code>。</p>
-<p><figure style="flex: 70.73770491803279" ><img loading="lazy" width="863" height="610" src="https://gallery.dachunwang.top/img/14vZHf.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="863" data-height="610" src="https://gallery.dachunwang.top/img/14vZHf.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>在安装前应该查看端口3306是否被占用。</p>
 <p>在cmd端输入：</p>
 
 <pre><code>netstat -ano</code></pre>
-<p><figure style="flex: 100.0" ><img loading="lazy" width="960" height="480" src="https://gallery.dachunwang.top/img/14vGD0.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="960" data-height="480" src="https://gallery.dachunwang.top/img/14vGD0.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>接下来输入：</p>
 
 <pre><code>cd C:\MySQL\mysql-8.0.18-winx64\bin</code></pre>
 <blockquote><p>cd 后面是bin文件存放位置,也就是打开后进入mysql的bin目录</p>
 </blockquote>
-<p><figure style="flex: 169.48529411764707" ><img loading="lazy" width="461" height="136" src="https://gallery.dachunwang.top/img/14xBFS.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="461" data-height="136" src="https://gallery.dachunwang.top/img/14xBFS.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>继续输入</p>
 
 <pre><code>mysqld --initialize --console</code></pre>
-<p><figure style="flex: 161.98979591836735" ><img loading="lazy" width="635" height="196" src="https://gallery.dachunwang.top/img/14zlmq.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="635" data-height="196" src="https://gallery.dachunwang.top/img/14zlmq.png" alt=" " /><figcaption> </figcaption></figure></p>
 <blockquote><p>注意！root @ localhost：后面的<strong>?vo!se;t&lt;2=Y</strong>就是初始密码（不含首位空格）。在没有更改密码前，需要记住这个密码，后续登录需要用到。复制密码先保存起来!!!</p>
 </blockquote>
 <h2>安装MySQL服务 + 启动MySQL 服务</h2>
@@ -164,33 +198,33 @@ default-character-set=utf8mb4</code></pre>
 <pre><code>mysqld --install [服务名]</code></pre>
 <blockquote><p>（服务名可以不加，不加默认为mysql）</p>
 <p>出现Service successfully installed.代表成功了
-<figure style="flex: 396.2962962962963" ><img loading="lazy" width="428" height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" /><figcaption> </figcaption></figure></p>
+<figure><img data-width="428" data-height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>如果出现了
 The service already exists!
 The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
-<figure style="flex: 455.88235294117646" ><img loading="lazy" width="620" height="68" src="https://gallery.dachunwang.top/img/15pGz4.png" /><figcaption> </figcaption></figure></p>
+<figure><img data-width="620" data-height="68" src="https://gallery.dachunwang.top/img/15pGz4.png" alt=" " /><figcaption> </figcaption></figure></p>
 </blockquote>
 <p>这是由于之前已经安装过mysql并且没有删除干净</p>
 <p>输入下面命令删除该mysql即可</p>
 
 <pre><code>sc delete mysql</code></pre>
-<p><figure style="flex: 399.0" ><img loading="lazy" width="399" height="50" src="https://gallery.dachunwang.top/img/159PX9.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="399" data-height="50" src="https://gallery.dachunwang.top/img/159PX9.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>删除以后再执行上面的安装命令</p>
-<p><figure style="flex: 396.2962962962963" ><img loading="lazy" width="428" height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="428" data-height="54" src="https://gallery.dachunwang.top/img/15SjRe.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>服务安装成功之后通过下面命令启动MySQL的服务</p>
 
 <pre><code>net start mysql</code></pre>
-<p><figure style="flex: 269.5945945945946" ><img loading="lazy" width="399" height="74" src="https://gallery.dachunwang.top/img/159sA0.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="399" data-height="74" src="https://gallery.dachunwang.top/img/159sA0.png" alt=" " /><figcaption> </figcaption></figure></p>
 <h2>连接MySQL + 修改密码</h2>
 <p>首先访问网址：<a href="https://www.navicat.com.cn/download/navicat-premium">https://www.navicat.com.cn/download/navicat-premium</a></p>
 <p>下载安装一个Navicat Premium</p>
-<p><figure style="flex: 79.43589743589743" ><img loading="lazy" width="1549" height="975" src="https://gallery.dachunwang.top/img/15iN9K.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="1549" data-height="975" src="https://gallery.dachunwang.top/img/15iN9K.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>安装完成后打开软件，点击<code>文件</code>——<code>新建连接</code>——<code>MySQL</code></p>
-<p><figure style="flex: 70.47038327526133" ><img loading="lazy" width="809" height="574" src="https://gallery.dachunwang.top/img/15FzQS.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="809" data-height="574" src="https://gallery.dachunwang.top/img/15FzQS.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>将刚刚复制保存下来的root @ localhost：后面的初始密码复制粘贴到密码</p>
 <p>点击<code>测试连接</code></p>
-<p><figure style="flex: 42.12893553223388" ><img loading="lazy" width="562" height="667" src="https://gallery.dachunwang.top/img/15kX79.png" /><figcaption> </figcaption></figure>
-<figure style="flex: 42.12893553223388" ><img loading="lazy" width="562" height="667" src="https://gallery.dachunwang.top/img/15kO0J.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="562" data-height="667" src="https://gallery.dachunwang.top/img/15kX79.png" alt=" " /><figcaption> </figcaption></figure>
+<figure><img data-width="562" data-height="667" src="https://gallery.dachunwang.top/img/15kO0J.png" alt=" " /><figcaption> </figcaption></figure></p>
 <h2>修改密码</h2>
 <p>使用cmd下输入下面命令进行数据库连接</p>
 <div class="highlight"><pre><span></span><span class="n">mysql</span> <span class="o">-</span><span class="n">u</span> <span class="n">root</span> <span class="o">-</span><span class="n">p</span>
@@ -198,93 +232,97 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 <p>接着在<code>Enter password</code>后面输入你的初始密码</p>
 <blockquote><p>（注意是输入进去，无法粘贴）</p>
 </blockquote>
-<p><figure style="flex: 266.30434782608694" ><img loading="lazy" width="490" height="92" src="https://gallery.dachunwang.top/img/15EjRx.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="490" data-height="92" src="https://gallery.dachunwang.top/img/15EjRx.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>出现 <code>mysql&gt;</code> 这个的时候  你就可以输入下面命令进行修改密码了</p>
 <div class="highlight"><pre><span></span><span class="k">ALTER</span> <span class="k">USER</span> <span class="s1">&#39;root&#39;</span><span class="nv">@&#39;localhost&#39;</span> <span class="k">IDENTIFIED</span> <span class="k">BY</span> <span class="s1">&#39;新密码&#39;</span><span class="p">;</span>
 </pre></div>
-<p><figure style="flex: 762.5" ><img loading="lazy" width="488" height="32" src="https://gallery.dachunwang.top/img/15VJS0.png" /><figcaption> </figcaption></figure></p>
+<p><figure><img data-width="488" data-height="32" src="https://gallery.dachunwang.top/img/15VJS0.png" alt=" " /><figcaption> </figcaption></figure></p>
 <p>修改完密码以后输入下面命令就可以退出mysql了</p>
 <div class="highlight"><pre><span></span><span class="k">exit</span><span class="p">;</span>
 </pre></div>
-<p><figure style="flex: 142.70833333333334" ><img loading="lazy" width="137" height="48" src="https://gallery.dachunwang.top/img/15Vrf1.png" /><figcaption> </figcaption></figure></p>
-
-            </div>
-        </article>
-        <div id="ga-tags">
-    
-    <span class="ga-tag">
-        <a class="ga-highlight" href="/tag/MySQL/">#MySQL</a>
-    </span>
-    
-</div>
+<p><figure><img data-width="137" data-height="48" src="https://gallery.dachunwang.top/img/15Vrf1.png" alt=" " /><figcaption> </figcaption></figure></p>
+</article>
     </section>
 
     
-<section id="ga-content_pager">
-
-    <div class="next">
-        <a class="ga-highlight" href="/archives/NavicatPremium_crack/">Navicat Premium 15 安装与激活</a>
-        <p class="yue">下载Navicat安装包与注册机</p>
-    </div>
-
-
-    <div class="prev">
-        <h3>没有了</h3>
-        <p class="yue">这是最旧的文章</p>
-    </div>
-
-</section>
-
-
-    
-
-</main>
-
-                <footer class="ga-mono" id="ga-footer">
-                    <section>
-                        <span id="ga-uptime"></span>
-                        <span class="brand">Oscar's wiki</span>
-                    </section>
-                    <section>
-                        <p class="copyright">
-                            <span>Copyright © 2021 Oscar</span>
-                            <span>Powered by <a no-style href="https://github.com/AlanDecode/Maverick" target="_blank">Maverick & Galileo</a></span>
-                        </p>
-                        <div class="copyright">
-                            <span class="footer-addon">
-                                蒙ICP备20002555号-1
-                            </span>
-                            <nav class="social-links">
-                                <ul></ul>
-                            </nav>
-                        </div>
-                    </section>
-                    <script>
-                        var site_build_date = "2019-12-18T16:51+08:00"
-                    </script>
-                    <script src="/assets/galileo-7c8cea54ab.js"></script>
-                </footer>
+    <section id="content-pager">
+        
+            <div class="next">
+                <a class="card" href="/archives/NavicatPremium_crack/">
+                    <time>March 12 2020</time>
+                    <span>Navicat Premium 15 安装与激活</span>
+                </a>
             </div>
-        </div>
-    </div>
-
-    <!--katex-->
-    <script defer src="/assets/katex.min.js"></script>
-    <script>
-    mathOpts = {
-        delimiters: [
-            {left: "$$", right: "$$", display: true},
-            {left: "\\[", right: "\\]", display: true},
-            {left: "$", right: "$", display: false},
-            {left: "\\(", right: "\\)", display: false}
-        ]
-    };
-    </script>
-    <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
-
-    <script src="/assets/ExSearch/jquery.min.js"></script>
-    <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+        
+        
+    </section>
+    
 
     
+
+    <script>
+        document.body.classList.add('content');
+        document.body.classList.remove('archive');
+    </script>
+</div>
+                    <footer>
+                        <span>Copyright © 2021 Oscar</span>
+                        
+    
+
+                        
+                    </footer>
+                </div>
+                
+<aside id="toc-container" class="no-scrollbar">
+    <span><i class="fa fa-align-right"></i> CONTENTS</span>
+    <div id="toc"></div>
+</aside>
+
+            </div>
+        </main>
+
+
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery-pjax@2.0.1/jquery.pjax.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/tocbot@4.10.0/dist/tocbot.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js"></script>
+        <script src="/assets/kepler-ef161b04d5.js"></script>
+        <script>
+            function ExSearchCall(item){
+                if (item && item.length) {
+                    $('.ins-close').click(); // 关闭搜索框
+                    $('input.ins-search-input').val(''); // 清空
+                    let url = item.attr('data-url'); // 获取目标页面 URL
+                    $.pjax({url: url, 
+                        container: '#pjax-container',
+                        fragment: '#pjax-container',
+                        timeout: 8000, }); // 发起一次 PJAX 请求
+                }
+            }
+        </script>
+
+        <!--Valine-->
+        
+
+        <!--ExSearch-->
+        <script src="/assets/ExSearch/ExSearch-493cb9cd89.js"></script>
+        
+        <!--katex-->
+        <link rel="stylesheet" href="/assets/katex.min.css">
+        <script defer src="/assets/katex.min.js"></script>
+        <script>
+        mathOpts = {
+            delimiters: [
+                {left: "$$", right: "$$", display: true},
+                {left: "\\[", right: "\\]", display: true},
+                {left: "$", right: "$", display: false},
+                {left: "\\(", right: "\\)", display: false}
+            ]
+        };
+        </script>
+        <script defer src="/assets/auto-render.min.js" onload="renderMathInElement(document.body, mathOpts);"></script>
+
+        
     </body>
 </html>
