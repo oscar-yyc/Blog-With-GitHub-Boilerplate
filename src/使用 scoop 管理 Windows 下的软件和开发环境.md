@@ -20,11 +20,11 @@ tags:
 
 打开浏览器——>在搜索引擎中输入关键词「Git」——>找到 Git 官网——>下载 Git 安装包——>运行 Git 安装程序——>安装完成
 
-如果你使用的是「Baidu」等**搜索引擎，中间的过程可能会更加繁琐曲折🤕
+如果你使用的是「Baidu」等**搜索引擎，中间的过程可能会更加繁琐曲折
 
 在 Windows 下大部分软件安装、配置使用各种不规范的目录，弄脏你系统的注册表，将计算机系统内部弄得脏乱不堪，这是让人难以忍受的
 
-由于工作、学习环境对 Windows 生态系统的依赖亦或是迁移 Linux、macOS 生态的过程会增加学习和金钱成本，是时候摆脱这个困境了，请允许我介绍 Windows 下最好用的 「包管理器」——[Scoop](https://scoop.sh/)！🤠
+由于工作、学习环境对 Windows 生态系统的依赖亦或是迁移 Linux、macOS 生态的过程会增加学习和金钱成本，是时候摆脱这个困境了，请允许我介绍 Windows 下最好用的 「包管理器」——[Scoop](https://scoop.sh/)！
 
 Windows 下目前主要有三种包管理器：
 
@@ -312,14 +312,14 @@ scoop unhold <AppName>
 
 ### Bucket
 
-Scoop 的软件存储库使用「Bucket」的概念，它是应用程序的集合，或者更具体地说，Bucket 是一个 Git 存储库，其中包含描述如何安装应用程序的JSON [应用程序清单](https://github.com/ScoopInstaller/Main/tree/master/bucket) 主要的 Bucket [按照 ⭐ Star 数](https://raw.githubusercontent.com/rasa/scoop-directory/master/by-score.md) 排序：
+Scoop 的软件存储库使用「Bucket」的概念，它是应用程序的集合，或者更具体地说，Bucket 是一个 Git 存储库，其中包含描述如何安装应用程序的JSON [应用程序清单](https://github.com/ScoopInstaller/Main/tree/master/bucket) 主要的 Bucket [按照  Star 数](https://raw.githubusercontent.com/rasa/scoop-directory/master/by-score.md) 排序：
 
 | Bucket                                                       | 描述                                                         |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | [Main](https://github.com/lukesampson/scoop)                 | Windows 的命令行安装程序                                     |
 | [extras](https://github.com/lukesampson/scoop-extras)        | 包含不太符合主存储桶标准的应用                               |
 | [main](https://github.com/ScoopInstaller/Main)               | 下一代的 Scoop 默认 Bucket                                   |
-| [chawyehsu/dorado](https://github.com/chawyehsu/dorado)      | 🐟 又是一个可爱的 Scoop 的 Bucket                             |
+| [chawyehsu/dorado](https://github.com/chawyehsu/dorado)      | 又是一个可爱的 Scoop 的 Bucket                               |
 | [Ash258/Scoop-Ash258](https://github.com/Ash258/Scoop-Ash258) | 个人 Bucket，包含各种应用                                    |
 | [nerd-fonts](https://github.com/matthewjberger/scoop-nerd-fonts) | 一个用于安装 Nerd Fonts 字体的 Bucket                        |
 | [java](https://github.com/ScoopInstaller/Java)               | 用于 Oracle Java, OpenJDK, Zulu, ojdkbuild, AdoptOpenJDK, Amazon Corretto, BellSoft Liberica, SapMachine和Microsoft JDK 的 Bucket |
@@ -429,7 +429,7 @@ scoop cleanup *
 sudo scoop cleanup * -g
 # 删除下载 <AppName> 的过期缓存
 scoop cleanup <AppName> -k
-# 上面的太麻烦？👇直接用下面一条命令一把梭🤣
+# 上面的太麻烦？直接用下面一条命令一把梭
 scoop cache rm * && sudo scoop cleanup -gk * && scoop cleanup * && sudo scoop cleanup * -g
 ```
 
@@ -452,7 +452,7 @@ scoop config debug true
 
 ## 常用软件
 
-应用清单/Bucket 列表可以👉 [在这](https://scoop-docs.vercel.app/apps/) 查看
+应用清单/Bucket 列表可以 [在这](https://scoop-docs.vercel.app/apps/) 查看
 
 ```
 # 流量/硬件监控
@@ -546,7 +546,7 @@ scoop install wox
 scoop install quicklook
 ```
 
-差不多这些指南已经够用了，更多的自行探索吧，Enjoy it 🤡
+差不多这些指南已经够用了，更多的自行探索吧，Enjoy it 
 
 **参考信息：**
 
