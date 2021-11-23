@@ -553,6 +553,8 @@ scoop install quicklook
 - [Scoop Docs](https://scoop-docs.vercel.app/)
 - [~/Scoop](https://scoop.netlify.app/)
 
+
+
 > 版权属于：**DEJAVU**
   原文链接：https://www.dejavu.moe/posts/windows-scoop
   转载时须注明出处及本声明
