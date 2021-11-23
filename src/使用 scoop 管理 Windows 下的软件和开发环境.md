@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [转载]使用 scoop 管理 Windows 下的软件和开发环境
+title: 转载 - 使用 scoop 管理 Windows 下的软件和开发环境
 slug: Scoop_install
 date: 2021/8/16 11:30:00
 status: publish
