@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Wed, 17 Nov 2021 13:39:04 +0806</lastBuildDate><pubDate>Wed, 17 Nov 2021 13:39:04 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 23 Nov 2021 02:48:17 +0806</lastBuildDate><pubDate>Tue, 23 Nov 2021 02:48:17 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
 &lt;p&gt;MySQL下载网址：&lt;a href="https://dev.mysql.com/downloads/mysql/"&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;已经下载好的压缩包：
 &lt;a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w"&gt;百度云提取码：dcwb&lt;/a&gt;&lt;/p&gt;
@@ -300,4 +300,567 @@ $ yarn config delete https-proxy&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143044.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;p&gt;16.安装完成&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="499" data-height="387" src="https://gallery.dachunwang.top/img/20210307143324.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Git_install/</guid><pubDate>Fri, 16 Apr 2021 11:30:00 +0806</pubDate></item></channel></rss>
+</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Git_install/</guid><pubDate>Fri, 16 Apr 2021 11:30:00 +0806</pubDate></item><item><title>转载 - 使用 scoop 管理 Windows 下的软件和开发环境</title><link>/archives/Scoop_install/</link><description>&lt;h2&gt;前言&lt;/h2&gt;
+&lt;p&gt;假如你的计算机使用 Windows 系统，如果你需要安装 Git，正常的步骤是：&lt;/p&gt;
+&lt;p&gt;打开浏览器——&amp;gt;在搜索引擎中输入关键词「Git」——&amp;gt;找到 Git 官网——&amp;gt;下载 Git 安装包——&amp;gt;运行 Git 安装程序——&amp;gt;安装完成&lt;/p&gt;
+&lt;p&gt;如果你使用的是「Baidu」等**搜索引擎，中间的过程可能会更加繁琐曲折&lt;/p&gt;
+&lt;p&gt;在 Windows 下大部分软件安装、配置使用各种不规范的目录，弄脏你系统的注册表，将计算机系统内部弄得脏乱不堪，这是让人难以忍受的&lt;/p&gt;
+&lt;p&gt;由于工作、学习环境对 Windows 生态系统的依赖亦或是迁移 Linux、macOS 生态的过程会增加学习和金钱成本，是时候摆脱这个困境了，请允许我介绍 Windows 下最好用的 「包管理器」——&lt;a href="https://scoop.sh/"&gt;Scoop&lt;/a&gt;！&lt;/p&gt;
+&lt;p&gt;Windows 下目前主要有三种包管理器：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scoop.sh/"&gt;Scoop&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://chocolatey.org/"&gt;Chocolatey&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://github.com/microsoft/winget-cli"&gt;Winget&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;本文不做三者的比较，仅讨论 Scoop；严格来说，Scoop 不算是「包管理器」，官方解释为「Scoop 是 Windows 的命令行安装程序」，但它基本实现了 Windows 上管理软件包的流程&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;包管理器：&lt;/strong&gt;或叫 &lt;code&gt;包管理系统&lt;/code&gt; 是在计算机中自动安装、配置、卸载和升级软件包的工具的集合，在 &lt;code&gt;系统软件&lt;/code&gt; 和 &lt;code&gt;应用软件&lt;/code&gt; 的软件管理中都有大量应用，常见的一些系统/应用软件包管理器：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;软件&lt;/th&gt;
+&lt;th&gt;包管理器&lt;/th&gt;
+&lt;th&gt;实例&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Debian/Ubuntu&lt;/td&gt;
+&lt;td&gt;apt&lt;/td&gt;
+&lt;td&gt;apt install git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;ArchLinux&lt;/td&gt;
+&lt;td&gt;pacman&lt;/td&gt;
+&lt;td&gt;pacman -S git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;macOS&lt;/td&gt;
+&lt;td&gt;Homebrew&lt;/td&gt;
+&lt;td&gt;brew install git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;openSUSE&lt;/td&gt;
+&lt;td&gt;zypper&lt;/td&gt;
+&lt;td&gt;zypper install git&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Python&lt;/td&gt;
+&lt;td&gt;Pypi&lt;/td&gt;
+&lt;td&gt;pip install opencv-python&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2&gt;简介&lt;/h2&gt;
+&lt;h3&gt;Scoop 是什么？&lt;/h3&gt;
+&lt;p&gt;Scoop 是 Windows 的命令行安装程序（command-line installer）&lt;/p&gt;
+&lt;p&gt;Scoop 致力于解决：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;权限弹出窗口（Windows UAC）&lt;/li&gt;
+&lt;li&gt;GUI 引导式安装程序&lt;/li&gt;
+&lt;li&gt;安装大量程序后造成的文件路径污染&lt;/li&gt;
+&lt;li&gt;安装和卸载程序的污染和残留&lt;/li&gt;
+&lt;li&gt;查找和安装依赖程序&lt;/li&gt;
+&lt;li&gt;需要执行额外的配置以使程序工作&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;环境要求&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;系统版本：Windows 7 SP1 及 Windows Server 2008 之后的版本&lt;/li&gt;
+&lt;li&gt;PowerShell 5（或更高版本，包括 PowerShell Core）&lt;/li&gt;
+&lt;li&gt;Net Framework 4.5 及更高版本&lt;/li&gt;
+&lt;li&gt;由于中国大陆特殊的网络情况，大概率还需要科学上网&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;建议环境：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://www.dejavu.moe/posts/cfw-tun/"&gt;CFW 优雅地使用 TUN 模式接管系统流量&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://www.dejavu.moe/posts/windows-terminal/"&gt;Windows Terminal &amp;amp; PowerShell 7 打造 Windows 下最好用的终端&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;安装&lt;/h2&gt;
+&lt;h3&gt;执行策略&lt;/h3&gt;
+&lt;p&gt;首先，以管理员身份打开 Windows Terminal/PowerShell，允许执行本地脚本&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;安装路径&lt;/h3&gt;
+&lt;p&gt;Scoop 是自由的，无论是 Scoop 本身的安装路径还是以后使用 Scoop 安装的软件路径，都是可控的：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Scoop 本身和安装软件的路径为：&lt;code&gt;C:\Users\[username]\scoop&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Scoop 全局安装软件的路径为：&lt;code&gt;C:\ProgramData\scoop&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;在开始安装 Scoop 前，我们应当提前设置环境变量决定其安装路径&lt;/p&gt;
+&lt;p&gt;对于 Scoop 本身和安装软件的路径，打开 Windows Terminal/PowerShell&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$env:SCOOP='C:\Scoop'
+[Environment]::SetEnvironmentVariable('SCOOP', $env:SCOOP, 'User')&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对于 Scoop 全局安装软件的路径，以 &lt;code&gt;管理员身份&lt;/code&gt; 打开 Windows Terminal/PowerShell&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;$env:SCOOP_GLOBAL='C:\Scoop\Global'
+[Environment]::SetEnvironmentVariable('SCOOP_GLOBAL', $env:SCOOP_GLOBAL, 'Machine')&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;安装 scoop&lt;/h3&gt;
+&lt;p&gt;现在可以开始安装 Scoop 了，打开 Windows Terminal/PowerShell&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Invoke-Expression (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh')
+# 或者短命令
+iwr -useb get.scoop.sh | iex&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="-1" data-height="-1" src="https://gallery.dachunwang.top/img/20211122103403.webp" alt="img" /&gt;&lt;figcaption&gt;img&lt;/figcaption&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h3&gt;安装 Git&lt;/h3&gt;
+&lt;p&gt;对于 Scoop 来说，Git 是必需的组件，现在安装很简单&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop install git&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;PS: 安装 Git 会附带安装 7zip，它也是 Scoop 必需的组件&lt;/p&gt;
+&lt;h3&gt;安装 Aria2&lt;/h3&gt;
+&lt;p&gt;Scoop 使用 &lt;a href="https://github.com/aria2/aria2"&gt;Aria2&lt;/a&gt; 进行多线程下载，之后它会应用于 Scoop 安装软件过程所有的下载&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop install aria2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;配置一下 Aria2 的参数 &lt;code&gt;scoop config [参数]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;参数：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;aria2-enabled (是否启用 Aria2，默认: true)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-retry-wait"&gt;aria2-retry-wait&lt;/a&gt; (重试等待时间，默认: 2)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-s"&gt;aria2-split&lt;/a&gt; (单任务最大连接数，默认: 5)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-x"&gt;aria2-max-connection-per-server&lt;/a&gt; (单服务器最大连接数，默认: 5，最大: 16)&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://aria2.github.io/manual/en/html/aria2c.html#cmdoption-k"&gt;aria2-min-split-size&lt;/a&gt; (文件最小切片大小: 5M)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;比如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 重试等待时间 5s
+scoop config aria2-retry-wait 5
+# 单任务最大连接数 32
+scoop config aria2-split 32
+# 单服务器最大连接数 16
+scoop config aria2-max-connection-per-server 16
+# 文件最小切片 1M
+scoop config aria2-min-split-size 1M&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;安装 sudo&lt;/h3&gt;
+&lt;p&gt;当 Scoop 全局安装软件的时候，需要管理员权限，在日常的使用过程中，我们可以在 scoop 命令前加 sudo 来提权以简化步骤，安装 sudo&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop install sudo&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;strong&gt;可能需要的步骤：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;在使用 &lt;code&gt;scoop checkup&lt;/code&gt; 后看到如下提示&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;WARN  Windows Defender may slow down or disrupt installs with realtime scanning.
+  Consider running:
+    sudo Add-MpPreference -ExclusionPath 'C:\Scoop'
+  (Requires 'sudo' command. Run 'scoop install sudo' if you don't have it.)
+WARN  Windows Defender may slow down or disrupt installs with realtime scanning.
+  Consider running:
+    sudo Add-MpPreference -ExclusionPath 'C:\Scoop\Global'
+  (Requires 'sudo' command. Run 'scoop install sudo' if you don't have it.)
+WARN  LongPaths support is not enabled.
+You can enable it with running:
+    Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1
+WARN  Found 3 potential problems.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;其中有三个「潜在」问题，可以按照自己实际情况选择执行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# Windows Defender可能会因实时扫描而减慢或破坏安装（注意对应实际 Scoop 路径）
+sudo Add-MpPreference -ExclusionPath 'C:\Scoop'
+sudo Add-MpPreference -ExclusionPath 'C:\Scoop\Global'
+# 长路径支持（建议开启）
+sudo Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\FileSystem' -Name 'LongPathsEnabled' -Value 1&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;使用&lt;/h2&gt;
+&lt;p&gt;使用命令 &lt;code&gt;scoop help&lt;/code&gt; 可以查看 scoop 命令帮助&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Usage: scoop &amp;lt;command&amp;gt; [&amp;lt;args&amp;gt;]
+
+Some useful commands are:
+
+alias       Manage scoop aliases
+bucket      Manage Scoop buckets
+cache       Show or clear the download cache
+checkup     Check for potential problems
+cleanup     Cleanup apps by removing old versions
+config      Get or set configuration values
+create      Create a custom app manifest
+depends     List dependencies for an app
+export      Exports (an importable) list of installed apps
+help        Show help for a command
+hold        Hold an app to disable updates
+home        Opens the app homepage
+info        Display information about an app
+install     Install apps
+list        List installed apps
+prefix      Returns the path to the specified app
+reset       Reset an app to resolve conflicts
+search      Search available apps
+status      Show status and check for new app versions
+unhold      Unhold an app to enable updates
+uninstall   Uninstall an app
+update      Update apps, or Scoop itself
+virustotal  Look for app's hash on virustotal.com
+which       Locate a shim/executable (similar to 'which' on Linux)
+
+Type 'scoop help &amp;lt;command&amp;gt;' to get help for a specific command.&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;使用 &lt;code&gt;scoop help &amp;lt;command&amp;gt;&lt;/code&gt;，查看具体命令的帮助，比如，使用 &lt;code&gt;scoop help config&lt;/code&gt; 查看 &lt;code&gt;config&lt;/code&gt; 命令的帮助&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Usage: scoop config [rm] name [value]
+
+The scoop configuration file is saved at ~/.config/scoop/config.json.
+
+To get a configuration setting:
+
+    scoop config &amp;lt;name&amp;gt;
+
+To set a configuration setting:
+
+    scoop config &amp;lt;name&amp;gt; &amp;lt;value&amp;gt;
+
+To remove a configuration setting:
+
+    scoop config rm &amp;lt;name&amp;gt;
+
+Settings
+--------
+
+proxy: [username:password@]host:port
+
+By default, Scoop will use the proxy settings from Internet Options, but with anonymous authentication.
+
+* To use the credentials for the current logged-in user, use 'currentuser' in place of username:password
+* To use the system proxy settings configured in Internet Options, use 'default' in place of host:port
+* An empty or unset value for proxy is equivalent to 'default' (with no username or password)
+* To bypass the system proxy and connect directly, use 'none' (with no username or password)&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;安装&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# 安装 &amp;lt;AppName&amp;gt;
+scoop install &amp;lt;AppName&amp;gt;
+# 安装 &amp;lt;AppName&amp;gt; 且禁止缓存安装包
+scoop install -k &amp;lt;AppName&amp;gt;
+# 安装 &amp;lt;AppName&amp;gt; 的指定版本 &amp;lt;Version&amp;gt;
+scoop install &amp;lt;AppName&amp;gt;@&amp;lt;Version&amp;gt;
+# 安装 &amp;lt;AppName&amp;gt; 的指定版本 &amp;lt;Version&amp;gt; 且禁止缓存安装包
+scoop install -k &amp;lt;AppName&amp;gt;@&amp;lt;Version&amp;gt;
+# 全局安装 &amp;lt;AppName&amp;gt;
+sudo scoop install &amp;lt;AppName&amp;gt; -g
+# 全局安装 &amp;lt;AppName&amp;gt; 且禁止缓存安装包
+sudo scoop install -gk &amp;lt;AppName&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;卸载&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# 卸载 &amp;lt;AppName&amp;gt;
+scoop uninstall &amp;lt;AppName&amp;gt;
+# 卸载全局安装的 &amp;lt;AppName&amp;gt;
+sudo scoop uninstall -g &amp;lt;AppName&amp;gt;
+# 卸载 &amp;lt;AppName&amp;gt; 且删除配置文件
+scoop uninstall -p &amp;lt;AppName&amp;gt;
+# 卸载全局安装的 &amp;lt;AppName&amp;gt; 且删除配置文件
+sudo scoop uninstall -gp &amp;lt;AppName&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;更新&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# 查看更新
+scoop status
+# 更新所有非全局安装的应用
+scoop update *
+# 更新所有全局安装的应用
+sudo scoop update * -g
+# 更新 scoop 和 bucket
+scoop update
+# 禁止更新名为 &amp;lt;AppName&amp;gt; 的应用
+scoop hold &amp;lt;AppName&amp;gt;
+# 允许更新名为 &amp;lt;AppName&amp;gt; 的应用
+scoop unhold &amp;lt;AppName&amp;gt;&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;Bucket&lt;/h3&gt;
+&lt;p&gt;Scoop 的软件存储库使用「Bucket」的概念，它是应用程序的集合，或者更具体地说，Bucket 是一个 Git 存储库，其中包含描述如何安装应用程序的JSON &lt;a href="https://github.com/ScoopInstaller/Main/tree/master/bucket"&gt;应用程序清单&lt;/a&gt; 主要的 Bucket &lt;a href="https://raw.githubusercontent.com/rasa/scoop-directory/master/by-score.md"&gt;按照  Star 数&lt;/a&gt; 排序：&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;&lt;tr&gt;
+&lt;th&gt;Bucket&lt;/th&gt;
+&lt;th&gt;描述&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/lukesampson/scoop"&gt;Main&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;Windows 的命令行安装程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/lukesampson/scoop-extras"&gt;extras&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;包含不太符合主存储桶标准的应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/ScoopInstaller/Main"&gt;main&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;下一代的 Scoop 默认 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/chawyehsu/dorado"&gt;chawyehsu/dorado&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;又是一个可爱的 Scoop 的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/Ash258/Scoop-Ash258"&gt;Ash258/Scoop-Ash258&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;个人 Bucket，包含各种应用&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/matthewjberger/scoop-nerd-fonts"&gt;nerd-fonts&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个用于安装 Nerd Fonts 字体的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/ScoopInstaller/Java"&gt;java&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;用于 Oracle Java, OpenJDK, Zulu, ojdkbuild, AdoptOpenJDK, Amazon Corretto, BellSoft Liberica, SapMachine和Microsoft JDK 的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/borger/scoop-galaxy-integrations"&gt;borger/scoop-galaxy-integrations&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;提供安装、附加和更新 GOG Galaxy 2 号集成的简单方法&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/TheRandomLabs/Scoop-Spotify"&gt;TheRandomLabs/Scoop-Spotify&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个用于 Spotify、Spicetify 和相关软件包的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/TheRandomLabs/scoop-nonportable"&gt;nonportable&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个用于非可移植应用程序的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/Calinou/scoop-games"&gt;games&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;开源/免费游戏和游戏相关工具的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/TheCjw/scoop-retools"&gt;TheCjw/scoop-retools&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;逆向工程工具的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/Ash258/Scoop-JetBrains"&gt;jetbrains&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;包含 Jetbrians IDE 的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/integzz/scoopet"&gt;integzz/scoopet&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;包含学术研究应用的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/ScoopInstaller/Versions"&gt;Versions&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;包含一些知名软件包的旧版本的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/Ash258/GenericBucket"&gt;Ash258/GenericBucket&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;通用的 Bucket 模板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/kidonng/sushi"&gt;kidonng/sushi&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个美味的、包容的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/rasa/scoops"&gt;rasa/scoops&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个美味的的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/littleli/scoop-clojure"&gt;littleli/scoop-clojure&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;安装 Clojure 的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/MCOfficer/scoop-nirsoft"&gt;MCOfficer/scoop-nirsoft&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;个人收藏的 nirsoft.net-bucket，总共包含了250多个程序&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/kkzzhizhou/scoop-apps"&gt;kkzzhizhou/coop-apps&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;合并多个Scoop仓库，使用Github Action自动更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/KNOXDEV/wsl"&gt;KNOXDEV/wsl&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;一个用于 WSL 的 Bucket，不需要 Windows UWP 应用商店&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/Ash258/Scoop-Sysinternals"&gt;Ash258/Scoop-Sysinternals&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;所有分开的 Sysinternals 工具的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/TheRandomLabs/Scoop-Bucket"&gt;TheRandomLabs/Scoop-Bucket&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;个人收藏的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/cderv/r-bucket"&gt;cderv/r-bucket&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;R 语言用户和软件工程师使用的个人 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/kkzzhizhou/scoop-zapps"&gt;kkzzhizhou/scoop-zapps&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;自用Scoop仓库，使用 Github Actions 自动更新&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/tetradice/scoop-iyokan-jp"&gt;tetradice/scoop-iyokan-jp&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;日本語環境に最適化されたscoop bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/rkbk60/scoop-for-jp"&gt;rkbk60/scoop-for-jp&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;适合小日子过得不错的日本人的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/ZvonimirSun/scoop-iszy"&gt;ZvonimirSun/scoop-iszy&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;ZvonimirSun 个人收藏的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;a href="https://github.com/ScoopInstaller/PHP"&gt;php&lt;/a&gt;&lt;/td&gt;
+&lt;td&gt;PHP 的 Bucket&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;举个例子，假如我们使用 Scoop 安装 Snipaste，使用 &lt;code&gt;scoop search [软件包名]&lt;/code&gt; 查找&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop search snipaste&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到下面的输出&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Results from other known buckets...
+(add them using 'scoop bucket add &amp;lt;name&amp;gt;')
+
+'extras' bucket:
+    bucket/snipaste
+
+'versions' bucket:
+    bucket/snipaste-beta&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;可以看到名为 extras 的 Bucket 含有 Snipaste，而名为 versions 的 Bucket 中含有 snipaste 的 beta 版，根据自己选择 Bucket 添加 Bucket&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop bucket add versions
+# 或者
+scoop bucket add extras&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;强烈建议添加 &lt;code&gt;versions&lt;/code&gt; 和 &lt;code&gt;extras&lt;/code&gt; 两个 Bucket&lt;/p&gt;
+&lt;p&gt;然后安装对应的 Snipaste，比如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop install snipaste
+# 或者 beta 版
+scoop install snipaste-beta&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;对于不在官方认证的已知 Bucket，可以按照其项目文档说明来添加，比如：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop bucket add dorado https://github.com/h404bi/dorado&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;代理&lt;/h3&gt;
+&lt;p&gt;如果你所在的网络深受中国大陆局域网的荼毒，scoop 支持 HTTP 代理&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;scoop config proxy [username:password@]host:port
+# 比如无认证的本地代理
+scoop config proxy 127.0.0.1:7890
+# 比如有认证的服务器代理
+scoop config proxy admin:password@43.54.76.98:6542
+# 取消代理设置
+scoop config rm proxy&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;缓存&lt;/h3&gt;
+&lt;p&gt;默认情况下，Scoop 安装软件会缓存应用的安装包，管理 Scoop 的缓存&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 查看所有软件包缓存
+scoop cache show
+# 清除所有软件包缓存
+scoop cache rm *
+# 清除 &amp;lt;AppName&amp;gt; 的缓存
+scoop cache rm &amp;lt;AppName&amp;gt;
+# 清除所有全局安装软件的缓存和旧版本
+sudo scoop cleanup -gk *
+# 清除所有非全局安装软件的缓存和旧版本
+scoop cleanup -k *
+# 删除 &amp;lt;AppName&amp;gt; 的旧版本
+scoop cleanup &amp;lt;AppName&amp;gt;
+# 删除全局安装的 &amp;lt;AppName&amp;gt; 的旧版本
+sudo scoop cleanup &amp;lt;AppName&amp;gt; -g
+# 删除所有非全局安装应用的旧版本
+scoop cleanup *
+# 删除所有全局安装应用的旧版本
+sudo scoop cleanup * -g
+# 删除下载 &amp;lt;AppName&amp;gt; 的过期缓存
+scoop cleanup &amp;lt;AppName&amp;gt; -k
+# 上面的太麻烦？直接用下面一条命令一把梭
+scoop cache rm * &amp;amp;&amp;amp; sudo scoop cleanup -gk * &amp;amp;&amp;amp; scoop cleanup * &amp;amp;&amp;amp; sudo scoop cleanup * -g&lt;/code&gt;&lt;/pre&gt;
+&lt;h3&gt;其他&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;# 查看已安装应用
+scoop list
+# 查看 &amp;lt;AppName&amp;gt; 的信息
+scoop info &amp;lt;AppName&amp;gt;
+# 打开 &amp;lt;AppName&amp;gt; 的官网
+scoop home &amp;lt;AppName&amp;gt;
+# 查看官方认证可添加的 Bucket
+bucket known
+# 检查 scoop 状态
+scoop checkup
+# 启用调试信息
+scoop config debug true&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;常用软件&lt;/h2&gt;
+&lt;p&gt;应用清单/Bucket 列表可以 &lt;a href="https://scoop-docs.vercel.app/apps/"&gt;在这&lt;/a&gt; 查看&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# 流量/硬件监控
+scoop install trafficmonitor
+# Draw.io 绘图工具
+scoop install draw.io
+# 一个 RSS 阅读器
+scoop install fluent-reader
+# 轻量的图片查看器
+scoop install imageglass
+# 强大的串流、录屏工具
+scoop install obs-studio
+# PowerShell 7
+scoop install powershell-preview
+# 苏门答腊 PDF
+scoop install sumatrapdf
+# Telegram
+scoop install telegram
+# 终端增强
+scoop install starship
+# ISO 写录工具
+scoop install rufus
+# Windows Terminal
+scoop install windows-terminal
+# DeepL 翻译工具
+scoop install deepl
+# 傲梅分区软件
+scoop install AoMeiPartition
+# Android Studio
+scoop install android-studio
+# 百度云盘（快逃！）
+scoop install baidunetdisk
+# 安装 cpu-z gpu-z aida64
+scoop install cpu-z gpu-z Aida64
+# Linux 常用工具
+scoop install curl wget grep touch vim gcc cmake sed less
+# 钉钉
+scoop install dingtalk
+# DiskGenius  分区精灵
+scoop install DiskGenius 
+# Everything 文件索引软件
+scoop install everything 
+# Geek Unistaller 卸载软件
+scoop install geekuninstaller 
+# Chrome 浏览器
+scoop install googlechrome 
+scoop install gradle 
+# IDM 下载工具
+scoop install IDM 
+scoop install innounp 
+scoop install lessmsi 
+# 管理 WSL 的全功能实用程序
+scoop install lxrunoffline 
+# JAVA maven
+scoop install maven 
+# Motrix 下载工具
+scoop install motrix 
+# Node.js
+scoop install nodejs -g
+# 安装 yarn
+scoop install yarn
+# Notepad++ 文本编辑器
+scoop install notepadplusplus 
+# OpenSSL
+scoop install openssl
+# Pandoc
+scoop install pandoc 
+# Postman
+scoop install postman 
+scoop install privoxy 
+scoop install process-explorer 
+# Redis 管理器
+scoop install redis-desktop-manager 
+# ScreenToGif 录制 Gif 工具
+scoop install screentogif
+# 图形化查看磁盘空间占用
+scoop install SpaceSniffer 
+# 切换 hosts 工具
+scoop install switchhosts 
+# Markdown 码字工具
+scoop install typora 
+# 强大的小工具集合
+scoop install utools 
+# VScode
+scoop install vscode-portable 
+# WireShark 流量分析工具
+scoop install wireshark 
+# Wox 一款 Windows 上快速启动器
+scoop install wox 
+# Windows 上空格键快速预览文件小工具
+scoop install quicklook&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;差不多这些指南已经够用了，更多的自行探索吧，Enjoy it&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;参考信息：&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://scoop-docs.vercel.app/"&gt;Scoop Docs&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href="https://scoop.netlify.app/"&gt;~/Scoop&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;&lt;p&gt;版权属于：&lt;strong&gt;DEJAVU&lt;/strong&gt;
+  原文链接：&lt;a href="https://www.dejavu.moe/posts/windows-scoop"&gt;https://www.dejavu.moe/posts/windows-scoop&lt;/a&gt;
+  转载时须注明出处及本声明&lt;/p&gt;
+&lt;/blockquote&gt;
+</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Scoop_install/</guid><pubDate>Mon, 16 Aug 2021 11:30:00 +0806</pubDate></item></channel></rss>
