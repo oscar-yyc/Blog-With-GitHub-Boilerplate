@@ -555,7 +555,7 @@ scoop install quicklook
 
 
 
-> 版权属于：**DEJAVU**
-  原文链接：https://www.dejavu.moe/posts/windows-scoop
+> 版权属于：**DEJAVU**<br>
+  原文链接：https://www.dejavu.moe/posts/windows-scoop<br>
   转载时须注明出处及本声明
 
