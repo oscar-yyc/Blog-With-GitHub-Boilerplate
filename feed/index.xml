@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 23 Nov 2021 03:05:25 +0806</lastBuildDate><pubDate>Tue, 23 Nov 2021 03:05:25 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Fri, 03 Dec 2021 02:43:32 +0806</lastBuildDate><pubDate>Fri, 03 Dec 2021 02:43:32 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
 &lt;p&gt;MySQL下载网址：&lt;a href="https://dev.mysql.com/downloads/mysql/"&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;已经下载好的压缩包：
 &lt;a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w"&gt;百度云提取码：dcwb&lt;/a&gt;&lt;/p&gt;
@@ -206,6 +206,21 @@ The current server installed: C:\MySQL\mysql-8.0.18-winx64\bin\mysqld MySQL
 &lt;p&gt;3、在打开的文件夹中找到 " lconcache.db " ，将其删除 ;&lt;/p&gt;
 &lt;p&gt;4、在任务栏上右击，选择 " 任务管理器 " ;&lt;/p&gt;
 &lt;p&gt;5、右击 "Windows资源管理器 " ,选择 " 重新启动 " 即可重建图标缓存。&lt;/p&gt;
+&lt;h2&gt;Windows 删除”找不到该项目”文件夹&lt;/h2&gt;
+&lt;h3&gt;问题原因：&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;使用不可显示ASCII字符或采用UNICODE字符方法创建的文件或文件夹；&lt;/li&gt;
+&lt;li&gt;名称中含有..等特殊符号文件或文件夹名称不符合Windows命名规范或建立空格目录名创建的文件或文件夹；&lt;/li&gt;
+&lt;li&gt;使用下载工具创建的文件夹,在未下载完成前自行删除文件或系统备份工具GHOST创建的文件；&lt;/li&gt;
+&lt;li&gt;恶意文件生成的防删除的文件或文件目录&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3&gt;解决方法&lt;/h3&gt;
+&lt;p&gt;1、新建的txt记事本文档中，并另存为del.bat批处理脚本文件，脚本内容如下：&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="k"&gt;DEL&lt;/span&gt; /F /A /Q \\?\&lt;span class="nv"&gt;%1&lt;/span&gt;
+&lt;span class="k"&gt;RD&lt;/span&gt; /S /Q \\?\&lt;span class="nv"&gt;%1&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;2、将要删除的文件拖到该批处理脚本上&lt;/p&gt;
+&lt;p&gt;3、根据提示单击确定继续，如弹出第二窗口请单击运行继续&lt;/p&gt;
 </description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/computer_question/</guid><pubDate>Wed, 13 Jan 2021 19:30:00 +0806</pubDate></item><item><title>网线水晶头接法</title><link>/archives/wiring/</link><description>&lt;h2&gt;网线水晶头两种接法标准&lt;/h2&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="690" data-height="610" src="https://gallery.dachunwang.top/img/20210121110106.jpg" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
 &lt;h2&gt;网线水晶头的排布标准&lt;/h2&gt;
@@ -859,8 +874,8 @@ scoop install quicklook&lt;/code&gt;&lt;/pre&gt;
 &lt;li&gt;&lt;a href="https://scoop-docs.vercel.app/"&gt;Scoop Docs&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href="https://scoop.netlify.app/"&gt;~/Scoop&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;blockquote&gt;&lt;p&gt;版权属于：&lt;strong&gt;DEJAVU&lt;/strong&gt;
-  原文链接：&lt;a href="https://www.dejavu.moe/posts/windows-scoop"&gt;https://www.dejavu.moe/posts/windows-scoop&lt;/a&gt;
+&lt;blockquote&gt;&lt;p&gt;版权属于：&lt;strong&gt;DEJAVU&lt;/strong&gt;&lt;br&gt;
+  原文链接：&lt;a href="https://www.dejavu.moe/posts/windows-scoop"&gt;https://www.dejavu.moe/posts/windows-scoop&lt;/a&gt;&lt;br&gt;
   转载时须注明出处及本声明&lt;/p&gt;
 &lt;/blockquote&gt;
 </description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Scoop_install/</guid><pubDate>Mon, 16 Aug 2021 11:30:00 +0806</pubDate></item></channel></rss>

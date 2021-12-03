@@ -19,7 +19,7 @@
     <script>
         var ExSearchConfig = {
             root: "",
-            api: "/53b6287ac32aca165fa34a1fb2f3fe22.json"
+            api: "/5404689281a43ce09f0471d2e61faeb3.json"
         }
     </script>
     <script>
@@ -134,6 +134,21 @@
 <p>3、在打开的文件夹中找到 " lconcache.db " ，将其删除 ;</p>
 <p>4、在任务栏上右击，选择 " 任务管理器 " ;</p>
 <p>5、右击 "Windows资源管理器 " ,选择 " 重新启动 " 即可重建图标缓存。</p>
+<h2>Windows 删除”找不到该项目”文件夹</h2>
+<h3>问题原因：</h3>
+<ol>
+<li>使用不可显示ASCII字符或采用UNICODE字符方法创建的文件或文件夹；</li>
+<li>名称中含有..等特殊符号文件或文件夹名称不符合Windows命名规范或建立空格目录名创建的文件或文件夹；</li>
+<li>使用下载工具创建的文件夹,在未下载完成前自行删除文件或系统备份工具GHOST创建的文件；</li>
+<li>恶意文件生成的防删除的文件或文件目录</li>
+</ol>
+<h3>解决方法</h3>
+<p>1、新建的txt记事本文档中，并另存为del.bat批处理脚本文件，脚本内容如下：</p>
+<div class="highlight"><pre><span></span><span class="k">DEL</span> /F /A /Q \\?\<span class="nv">%1</span>
+<span class="k">RD</span> /S /Q \\?\<span class="nv">%1</span>
+</pre></div>
+<p>2、将要删除的文件拖到该批处理脚本上</p>
+<p>3、根据提示单击确定继续，如弹出第二窗口请单击运行继续</p>
 </article>
     </section>
 
