@@ -32,19 +32,20 @@
         });
     </script>
     
-<title>Category: 日常技巧 - Wainic's wiki</title>
+<title>Git 连接 Github 与 Coding - Wainic's wiki</title>
 <meta name="author" content="Wainic" />
-<meta name="description" content="Coding Changes the World" />
-<meta property="og:title" content="Category: 日常技巧 - Wainic's wiki" />
-<meta property="og:description" content="Coding Changes the World" />
+<meta name="description" content="Github 仓库连接" />
+<meta property="og:title" content="Git 连接 Github 与 Coding - Wainic's wiki" />
+<meta property="og:description" content="Github 仓库连接" />
 <meta property="og:site_name" content="Wainic's wiki" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="/category/日常技巧/" />
-<meta property="og:image" content="Wainic's wiki" />
-<meta name="twitter:title" content="Category: 日常技巧 - Wainic's wiki" />
-<meta name="twitter:description" content="Coding Changes the World" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/archives/Git_set/" />
+<meta property="og:image" content="" />
+<meta property="article:published_time" content="2021-02-17T11:30:00-00.00" />
+<meta name="twitter:title" content="Git 连接 Github 与 Coding - Wainic's wiki" />
+<meta name="twitter:description" content="Github 仓库连接" />
 <meta name="twitter:card" content="summary" />
-<meta name="twitter:image" content="/android-chrome-512x512.png" />
+<meta name="twitter:image" content="" />
 
 
     
@@ -54,7 +55,7 @@
 
     </head>
     
-    <body class="archive">
+    <body class="content">
         <header>
             <div class="container">
                 <section>
@@ -90,7 +91,7 @@
                     
                     <section>
                         
-    <div class=" "><span><a href="/category/编程开发/">编程开发</a><button class="toggle_sidebar fa"></button></span><ul><div class=" "><span><a href="/category/环境配置/">环境配置</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Scoop_install/">转载 - 使用 scoop 管理 Windows 下的软件和开发环境</a></li><li class=""><a href="/archives/Git_set/">Git 连接 Github 与 Coding</a></li><li class=""><a href="/archives/Git_set/">Git 连接 Github 与 Coding</a></li><li class=""><a href="/archives/Git_proxy/">Git、NPM 和 Yarn  代理加速</a></li></ul></div><div class=" "><span><a href="/category/软件安装/">软件安装</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Git_install/">Windows系统Git安装</a></li><li class=""><a href="/archives/NavicatPremium_crack/">Navicat Premium 15 安装与激活</a></li><li class=""><a href="/archives/MySQL_install/">MySQL 8.0.18安装教程(windows 64位)</a></li></ul></div></ul></div><div class="open current"><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/wiring/">网线水晶头接法</a></li><li class=""><a href="/archives/computer_question/">电脑常见问题</a></li></ul></div>
+    <div class="open "><span><a href="/category/编程开发/">编程开发</a><button class="toggle_sidebar fa"></button></span><ul><div class="open "><span><a href="/category/环境配置/">环境配置</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Scoop_install/">转载 - 使用 scoop 管理 Windows 下的软件和开发环境</a></li><li class="current"><a href="/archives/Git_set/">Git 连接 Github 与 Coding</a></li><li class="current"><a href="/archives/Git_set/">Git 连接 Github 与 Coding</a></li><li class=""><a href="/archives/Git_proxy/">Git、NPM 和 Yarn  代理加速</a></li></ul></div><div class=" "><span><a href="/category/软件安装/">软件安装</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/Git_install/">Windows系统Git安装</a></li><li class=""><a href="/archives/NavicatPremium_crack/">Navicat Premium 15 安装与激活</a></li><li class=""><a href="/archives/MySQL_install/">MySQL 8.0.18安装教程(windows 64位)</a></li></ul></div></ul></div><div class=" "><span><a href="/category/日常技巧/">日常技巧</a><button class="toggle_sidebar fa"></button></span><ul><li class=""><a href="/archives/wiring/">网线水晶头接法</a></li><li class=""><a href="/archives/computer_question/">电脑常见问题</a></li></ul></div>
 
                     </section>
                     <section hidden class="sidebar-external-link">
@@ -102,45 +103,88 @@
                 </aside>
                 <div id="content-wrapper">
                     <div id="content">
-
     <section>
-        <h1 class="page-title">CATEGORY: 日常技巧</h1>
-        <div id="content-list">
-            
+        <h1 class="post-title">Git 连接 Github 与 Coding</h1>
+        <p class="post-meta">
+            <time>February 17 2021</time>
+            <span class="tags">
+                
+                <span>
+                    <a href="/tag/Git/">#Git</a>
+                </span>
+                
+                <span>
+                    <a href="/tag/Coding/">#Coding</a>
+                </span>
+                
+            </span>
+        </p>
+        <article class="yue"><h2>Github 仓库连接</h2>
+<p>打开 cmd 输入下面命令</p>
 
+<pre><code>git config --global user.name "username"   # username是你的GitHub用户名，注意大小写
+git config --global user.email "email"     # email是注册 GitHub的邮箱
+ssh-keygen -t ed25519 -C "email"           # 生成ed25519密钥对，email同上
+接下来一直回车就可以</code></pre>
+<p>默认密钥对在用户目录的 <code>.ssh</code> 目录下，在该目录你可以看到 <code>id_ed25519</code>和 <code>id_ed25519.pub</code> ，使用文本编辑器打开 <code>id_rsa.pub</code> 文件并复制</p>
+<p>打开 GitHub，点击头像的 <code>settings</code> 选项进入设置，在 SSH and GPG keys 中粘贴 <code>id_ed25519.pub</code> 中的内容，并点击 <code>Add SSH key</code></p>
+<p>回到本地的 cmd ，输入命令连接 GitHub</p>
 
-            <section class="card-list">
-                
-                    <a class="card" href="/archives/wiring/">
-                        <time>January 21 2021</time>
-                        <span>网线水晶头接法</span>
-                    </a>
-                
-                    <a class="card" href="/archives/computer_question/">
-                        <time>January 13 2021</time>
-                        <span>电脑常见问题</span>
-                    </a>
-                
-            </section>
-        </div>
+<pre><code>ssh -T git@github.com</code></pre>
+<p>出现一个 hostname 提示输入 <code>yes</code> 回车，类似下面的提示就代表没问题了</p>
+
+<pre><code>Hi oscar-yyc! You've successfully authenticated, but GitHub does not provide shell access.</code></pre>
+<h2>Coding 仓库连接</h2>
+<p>打开 cmd 输入下面命令</p>
+
+<pre><code>ssh-keygen
+接下来一直回车就可以</code></pre>
+<p>默认密钥对在用户目录的 <code>.ssh</code> 目录下，在该目录你可以看到 <code>id_rsa</code> 和 <code>id_rsa.pub</code> ，使用文本编辑器打开 <code>id_rsa.pub</code> 文件并复制</p>
+<p>打开 Coding，点击头像的 <code>个人账户设置</code> 选项进入设置，点击 <code>新增公钥</code> ，输入公钥的名称，并在 公钥内容 中粘贴 <code>id_rsa.pub</code> 中的内容，勾选<code>永久有效</code>后点击<code>确认</code></p>
+</article>
     </section>
+
+    
+    <section id="content-pager">
+        
+            <div class="next">
+                <a class="card" href="/archives/Git_set/">
+                    <time>February 17 2021</time>
+                    <span>Git 连接 Github 与 Coding</span>
+                </a>
+            </div>
+        
+        
+            <div class="prev">
+                <a class="card" href="/archives/Git_proxy/">
+                    <time>February 16 2021</time>
+                    <span>Git、NPM 和 Yarn  代理加速</span>
+                </a>
+            </div>
+        
+    </section>
+    
 
     
 
     <script>
-        document.body.classList.add('archive');
-        document.body.classList.remove('content');
+        document.body.classList.add('content');
+        document.body.classList.remove('archive');
     </script>
-
 </div>
                     <footer>
                         <span>Copyright © 2021 Wainic</span>
                         
+    
+
                         
                     </footer>
                 </div>
                 
-<aside id="toc-container" class="no-scrollbar no-bg"></aside>
+<aside id="toc-container" class="no-scrollbar">
+    <span><i class="fa fa-align-right"></i> CONTENTS</span>
+    <div id="toc"></div>
+</aside>
 
             </div>
         </main>
