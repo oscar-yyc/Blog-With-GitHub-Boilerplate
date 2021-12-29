@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Tue, 28 Dec 2021 03:46:38 +0806</lastBuildDate><pubDate>Tue, 28 Dec 2021 03:46:38 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0"><channel><title>Wainic's wiki</title><link>/</link><description>Coding Changes the World</description><docs>http://www.rssboard.org/rss-specification</docs><generator>python-feedgen</generator><image><url>/android-chrome-512x512.png</url><title>Wainic's wiki</title><link>/</link></image><language>zh-CN</language><lastBuildDate>Wed, 29 Dec 2021 13:25:49 +0806</lastBuildDate><pubDate>Wed, 29 Dec 2021 13:25:49 +0806</pubDate><item><title>MySQL 8.0.18安装教程(windows 64位)</title><link>/archives/MySQL_install/</link><description>&lt;h2&gt;下载MySQL安装文件&lt;/h2&gt;
 &lt;p&gt;MySQL下载网址：&lt;a href="https://dev.mysql.com/downloads/mysql/"&gt;https://dev.mysql.com/downloads/mysql/&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;已经下载好的压缩包：
 &lt;a href="https://pan.baidu.com/s/1afSZBMSsIn9JOLCLvYfO_w"&gt;百度云提取码：dcwb&lt;/a&gt;&lt;/p&gt;
@@ -300,7 +300,21 @@ ssh-keygen -t ed25519 -C "email"           # 生成ed25519密钥对，email同�
 接下来一直回车就可以&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;默认密钥对在用户目录的 &lt;code&gt;.ssh&lt;/code&gt; 目录下，在该目录你可以看到 &lt;code&gt;id_rsa&lt;/code&gt; 和 &lt;code&gt;id_rsa.pub&lt;/code&gt; ，使用文本编辑器打开 &lt;code&gt;id_rsa.pub&lt;/code&gt; 文件并复制&lt;/p&gt;
 &lt;p&gt;打开 Coding，点击头像的 &lt;code&gt;个人账户设置&lt;/code&gt; 选项进入设置，点击 &lt;code&gt;新增公钥&lt;/code&gt; ，输入公钥的名称，并在 公钥内容 中粘贴 &lt;code&gt;id_rsa.pub&lt;/code&gt; 中的内容，勾选&lt;code&gt;永久有效&lt;/code&gt;后点击&lt;code&gt;确认&lt;/code&gt;&lt;/p&gt;
-</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Git_set/</guid><pubDate>Wed, 17 Feb 2021 11:30:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
+</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Git_set/</guid><pubDate>Wed, 17 Feb 2021 11:30:00 +0806</pubDate></item><item><title>Git恢复之前版本</title><link>/archives/Git_reset/</link><description>&lt;h2&gt;查看版本号：&lt;/h2&gt;
+&lt;p&gt;可以使用下面命令查看&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;git log&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="978" data-height="508" src="https://gallery.dachunwang.top/img/202112292050132.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;也可以在 github 网站上查看：&lt;/p&gt;
+&lt;p&gt;&lt;figure&gt;&lt;img data-width="1284" data-height="544" src="https://gallery.dachunwang.top/img/202112292056645.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
+&lt;h2&gt;使用下面命令将版本退回&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;git reset --hard 目标版本号&lt;/code&gt;&lt;/pre&gt;
+&lt;h2&gt;使用下面命令提交更改&lt;/h2&gt;
+
+&lt;pre&gt;&lt;code&gt;git push -f&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;回退成功！&lt;/p&gt;
+</description><author>iloveyichen@aliyun.com (Wainic)</author><guid isPermaLink="true">/archives/Git_reset/</guid><pubDate>Sat, 20 Feb 2021 11:30:00 +0806</pubDate></item><item><title>Windows系统Git安装</title><link>/archives/Git_install/</link><description>&lt;h2&gt;Windows系统Git安装&lt;/h2&gt;
 &lt;h3&gt;下载Git安装程序&lt;/h3&gt;
 &lt;p&gt;Git官网下载，网站地址：&lt;a href="https://git-scm.com/downloads"&gt;https://git-scm.com/downloads&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;figure&gt;&lt;img data-width="1012" data-height="847" src="https://gallery.dachunwang.top/img/20210307141757.png" alt="" /&gt;&lt;/figure&gt;&lt;/p&gt;
