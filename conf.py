@@ -79,6 +79,6 @@ head_addon = r'''
 <link rel="icon" type="image/x-icon" href="https://gallery.dachunwang.top/img/20211117104259.vnd.microsoft.icon"/>
 '''
 
-footer_addon = ''
+footer_addon = '<a href="https://www.netlify.com/" target="_blank">Netlify</a>提供网站托管服务'
 
 body_addon = ''
